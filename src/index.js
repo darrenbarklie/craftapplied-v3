@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 //import registerServiceWorker from './registerServiceWorker';
 
-
+require('./sass/base.scss');
+import App from './components/App';
 
 ReactDOM.render(
-  <h1>Test</h1>,
+  <App />,
   document.getElementById('root'));
 //registerServiceWorker();

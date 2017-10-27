@@ -5,7 +5,7 @@ Craft Applied homepage build
 - [x] Install dependencies
 - [x] Configure webpack
 - [x] Install React
-- [ ] Configure components
+- [x] Configure components
 - [ ] Configure storage
 - [ ] Configure api
 - [ ] Configure router
