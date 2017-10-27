@@ -2,8 +2,9 @@
 Craft Applied homepage build
 
 ## Todo
-- [ ] Install dependencies
-- [ ] Configure webpack
+- [x] Install dependencies
+- [x] Configure webpack
+- [ ] Install React
 - [ ] Configure components
 - [ ] Configure storage
 - [ ] Configure api
