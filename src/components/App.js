@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import { Navigation } from './globals';
+import { Layout } from './globals/Layout'
 
 
 class App extends Component {
   render() {
     return (
       <div id="app">
-        <small>App Component</small>
-
-        <Navigation />
-
+        <Layout />
       </div>
     )
   }

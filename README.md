@@ -8,6 +8,6 @@ Craft Applied homepage build
 - [x] Configure components
 - [ ] Configure storage
 - [ ] Configure api
-- [ ] Configure router
+- [x] Configure router
 - [ ] Develop front-end templates
 - [ ] Publish site
