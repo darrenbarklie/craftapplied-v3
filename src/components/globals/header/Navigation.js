@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom'
 export const Navigation = () => {
   return (
     <nav className="primary">
-      <small>Navigation</small>
       <ul>
         <li><NavLink exact activeClassName="active" to="/">Home</NavLink></li>
         <li><NavLink activeClassName="active" to="/about">About</NavLink></li>

@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { Navigation } from '.'
+import { Header } from './header/.'
+
 import { Home } from '../home/Home'
 
 export const Layout = () => {
   return (
     <div id="layout">
-      <small>Layout</small>
 
-      <Navigation />
+
+      <Header />
 
       <Switch>
         <Route exact path="/" component={Home} />

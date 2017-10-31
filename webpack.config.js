@@ -31,6 +31,11 @@ module.exports = {
         loader: 'style-loader!css-loader!sass-loader',
         exclude: /flexboxgrid/
       },
+      { // Flexboxgrid Loader //
+        test: /\.css$/,
+        loader: 'style-loader!css-loader',
+        include: /flexboxgrid/
+      },
       { // Image Loader //
         test: /\.(jpe?g|png|gif|svg)$/i,
         loader:'file-loader?name=assets/images/[name].[ext]',

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-
-import { Splash, Portfolio } from './'
+import { Splash, Portfolio } from '.'
 
 
 export class Home extends Component {
