@@ -1,15 +1,18 @@
-
+// Element : HEADER MAIN
 header.main {
   padding: 2rem 0;
   background-color: white;
+  border: 2px solid purple;
+  .row {
+    justify-content: space-between;
+  }
   .brand {
     display: block;
     width: 8rem;
     height: 8rem;
   }
 }
-
-
+// Element : NAV PRIMARY
 nav.primary {
   height: 100%;
   ul {
