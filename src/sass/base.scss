@@ -1,29 +1,4 @@
 @import 'mixins/reset';
 
-body {
-  background: rgba(0,255,0,0.1);
-}
-
-
-
-header.main {
-  .brand {
-    display: block;
-    width: 4rem;
-    height: 4rem;
-  }
-}
-
-
-nav.primary {
-  background: white;
-  ul {
-    li {
-      display: inline-block;
-      a {
-        display: inline-block;
-        padding: 0.5rem 1rem;
-      }
-    }
-  }
-}
+@import 'globals/layout';
+@import 'globals/header';

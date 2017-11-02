@@ -6,7 +6,6 @@ export const Navigation = () => {
   return (
     <nav className="primary">
       <ul>
-        <li><NavLink exact activeClassName="active" to="/">Home</NavLink></li>
         <li><NavLink activeClassName="active" to="/about">About</NavLink></li>
         <li><NavLink activeClassName="active" to="/services">Services</NavLink></li>
         <li><NavLink activeClassName="active" to="/work">Work</NavLink></li>

@@ -3,6 +3,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import { NavLink } from 'react-router-dom'
 import { Brand, Navigation } from '.'
 
+
 export const Header = (props) => {
   return (
     <header className="main">
