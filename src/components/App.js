@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Layout } from './globals/Layout'
+import { Layout } from './globals/.'
 
 
 class App extends Component {

@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import { Grid } from 'react-flexbox-grid'
-import { Header } from './header'
 
-import { Home } from '../home/.'
-import { Contact } from '../contact/.'
+import { ErrorBoundary, Header } from '.'
+import { Home, Contact } from '.'
+
 
 export const Layout = () => {
   return (
@@ -19,7 +19,10 @@ export const Layout = () => {
           <Route path="/services" render={() => <h1>Services</h1>} />
           <Route path="/work" render={() => <h1>Work</h1>} />
           <Route path="/blog" render={() => <h1>Blog</h1>} />
-          <Route path="/contact" component={Contact} />
+          <ErrorBoundary>
+            <Route path="/contact" component={Contact} />
+          </ErrorBoundary>
+
           <Route render={() => <h1>404</h1>} />
         </Switch>
       </Grid>

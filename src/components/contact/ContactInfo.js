@@ -8,7 +8,7 @@ export const ContactInfo = (props) => {
       <p>+44 (0)208 123 0264</p>
       <p>hello@craftapplied.com</p>
 
-      <div class="social">
+      <div className="social">
         <ul>
           <li><a href="#">FB</a></li>
           <li><a href="#">TW</a></li>
