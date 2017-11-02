@@ -1,3 +1,4 @@
 export { Contact } from './Contact'
-export { ContactInfo } from './ContactInfo'
+export { ContactIntro } from './ContactIntro'
 export { ContactForm } from './ContactForm'
+export { ContactInfo } from './ContactInfo'

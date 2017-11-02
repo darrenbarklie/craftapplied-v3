@@ -23,6 +23,9 @@ nav.primary {
       display: flex;
       height: 100%;
       align-items: center;
+      &::before {
+        display: none;
+      }
       a {
         padding: 1rem 1.5rem;
       }

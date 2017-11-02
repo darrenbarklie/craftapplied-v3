@@ -1,0 +1,38 @@
+
+
+.contact {
+  .intro {
+    h1 {
+      @include sr-only;
+    }
+  }
+}
+
+#contact-form {
+  background-color: $white;
+  padding: 1rem 0;
+
+  label {
+    display: block;
+  }
+  input {
+    display: block;
+  }
+  .project-type {
+    label,
+    input {
+      display: inline-block;
+    }
+  }
+  textarea {
+    display: block;
+  }
+  input.newsletter,
+  label.newsletter {
+    display: inline;
+    border: 1px solid red;
+  }
+  button {
+    display: block;
+  }
+}
