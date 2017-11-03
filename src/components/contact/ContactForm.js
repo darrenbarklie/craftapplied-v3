@@ -12,7 +12,8 @@ export class ContactForm extends Component {
   render() {
     return (
 
-      <Form onSubmit={submittedValues => this.setState( { submittedValues } )}>
+      //<Form onSubmit={submittedValues => this.setState( { submittedValues } )}>
+      <Form onSubmit={submittedValues => console.log( { submittedValues } )}>
         { formApi => (
 
           <form onSubmit={formApi.submitForm} id="contact-form">

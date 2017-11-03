@@ -1,14 +1,20 @@
 const express = require('express')
 const router = express.Router()
 
+const ContactMessage = require('../models/contactMessage')
+
+
 // (Test) GET
-router.get('/test', function(req, res){
+router.get('/contact', function(req, res){
   res.send({type: 'GET'})
 })
 
 // POST ContactMessage to db
 router.post('/contact', function(req, res){
-  res.send({type: 'POST'})
+  // Create new instance with body content
+  ContactMessage.create(req.body).then(function(contactMessage){
+    res.send(contactMessage)
+  })
 })
 
 module.exports = router
