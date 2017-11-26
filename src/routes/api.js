@@ -10,11 +10,11 @@ router.get('/contact', function(req, res){
 })
 
 // POST ContactMessage to db
-router.post('/contact', function(req, res){
-  // Create new instance with body content
+router.post('/contact', function(req, res, next){
+  // Create new instance with body content, then send
   ContactMessage.create(req.body).then(function(contactMessage){
     res.send(contactMessage)
-  })
+  }).catch(next)
 })
 
 module.exports = router

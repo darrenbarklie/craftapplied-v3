@@ -4,9 +4,9 @@
   "description": "Craft Applied public site",
   "main": "index.js",
   "scripts": {
-    "dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "deploy": "webpack -p",
-    "nodemon": "node node_modules/nodemon/bin/nodemon server.js",
+    "nodemon": "nodemon ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack"
   },
@@ -40,7 +40,6 @@
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.5",
     "node-sass": "^4.5.3",
-    "nodemon": "^1.12.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
     "webpack": "^3.8.1",

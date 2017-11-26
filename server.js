@@ -7,14 +7,21 @@ const mongoose = require('mongoose')
 const app = express()
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/craftapplied')
+mongoose.connect('mongodb://localhost/craftapplied', {
+  useMongoClient: true
+})﻿
 mongoose.Promise = global.Promise
 
-// Middleware : bodyParser JSON
+
+
+// Middleware : Body Parser
 app.use(bodyParser.json())
 
 // Initialize routes
 app.use('/api', require('./src/routes/api'))
+
+// Middleware : Error Handling
+
 
 // Listen for requests
 app.listen(process.env.PORT || 8081, function(){
@@ -23,4 +30,4 @@ app.listen(process.env.PORT || 8081, function(){
 
 
 // "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe"
-// node node_modules/nodemon/bin/nodemon src/server
+// nodemon ./server.js
