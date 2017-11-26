@@ -13,20 +13,23 @@ mongoose.connect('mongodb://localhost/craftapplied', {
 mongoose.Promise = global.Promise
 
 
-
 // Middleware : Body Parser
 app.use(bodyParser.json())
 
-// Initialize routes
+// Middleware : Initialize routes
 app.use('/api', require('./src/routes/api'))
 
 // Middleware : Error Handling
+app.use(function(err, req, res, next){
+  console.log(err)
+  res.status(422).send({error: err.message})
+})
 
 
 // Listen for requests
 app.listen(process.env.PORT || 8081, function(){
   console.log('Now listening for requests...')
-});
+})
 
 
 // "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe"
