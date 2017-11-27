@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 
+
 module.exports = {
   entry: [
     './src/index.js'
@@ -11,9 +12,16 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    // historyApiFallBack: true,
     port: 8080,
-    historyApiFallback: true
+    contentBase: path.resolve(__dirname, 'dist'),
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8082',
+        secure: false,
+        changeOrigin: true,
+      }
+    }
   },
   watch: true,
   module: {
@@ -52,5 +60,8 @@ module.exports = {
         ],
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };

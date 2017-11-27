@@ -4,7 +4,7 @@
   "description": "Craft Applied public site",
   "main": "index.js",
   "scripts": {
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --inline",
     "deploy": "webpack -p",
     "nodemon": "nodemon ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1",

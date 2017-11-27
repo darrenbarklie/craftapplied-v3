@@ -4,10 +4,11 @@ const router = express.Router()
 const ContactMessage = require('../models/contactMessage')
 
 
-// GET (Testing)
-// router.get('/contact', function(req, res, next){
-//   res.send({type: 'GET'})
-// })
+//GET (Testing)
+router.get('/contact', function(req, res, next){
+  res.send({type: 'GET'})
+  console.log('GET')
+})
 
 // POST : ContactMessage to db
 router.post('/contact', function(req, res, next){
