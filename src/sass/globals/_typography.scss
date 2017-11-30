@@ -154,15 +154,15 @@ ul {
 a {
   font-family: 'NeuzeitOffice-Bold', system;
   color: $spring-green;
-  transition: color 0.5s ease-out;
   text-decoration: none;
   outline: 0 none;
-  &:hover, &:active {
+  transition: color 0.33s ease-out;
+  &:hover, &:focus {
     color: lighten($spring-green, 15%);
-    transition: color 0.33s linear;
+    transition: color 0.22s ease-in;
   }
   &:active {
-    color: darken($spring-green,10%);
+    color: darken($spring-green, 10%);
     transition: color 0.1s linear;
   }
 }

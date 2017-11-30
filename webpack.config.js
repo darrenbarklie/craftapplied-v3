@@ -12,7 +12,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    // historyApiFallBack: true,
+    historyApiFallback: true,
     port: 8080,
     contentBase: path.resolve(__dirname, 'dist'),
     proxy: {

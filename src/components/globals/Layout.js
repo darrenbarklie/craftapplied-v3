@@ -14,11 +14,15 @@ export const Layout = () => {
 
       <Grid fluid className="grid-container stage">
         <Switch>
-          <Route exact path="/" component={Home} />
+          <ErrorBoundary>
+            <Route exact path="/" component={Home} />
+          </ErrorBoundary>
+          
           <Route path="/about" render={() => <h1>About</h1>} />
           <Route path="/services" render={() => <h1>Services</h1>} />
           <Route path="/work" render={() => <h1>Work</h1>} />
           <Route path="/blog" render={() => <h1>Blog</h1>} />
+
           <ErrorBoundary>
             <Route path="/contact" component={Contact} />
           </ErrorBoundary>

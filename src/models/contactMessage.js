@@ -4,19 +4,19 @@ const Schema = mongoose.Schema
 const ContactMessageSchema = new Schema({
   name: {
     type: String,
-    required: [true, 'Name is required']
+    //required: [true, 'Name is required']
   },
   email: {
     type: String,
-    required: [true, 'Email is required']
+    //required: [true, 'Email is required']
   },
   projectType: {
     type: String,
-    required: [true, 'Project type is required']
+    //required: [true, 'Project type is required']
   },
   message: {
     type: String,
-    required: [true, 'Message is required']
+    //required: [true, 'Message is required']
   },
   newsletter: {
     type: Boolean,

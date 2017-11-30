@@ -9,32 +9,42 @@ export class ContactForm extends Component {
     this.state = {};
   }
 
-  handleSubmit(submittedValues) {
-    // console.log(submittedValues)
-    console.log('submitted')
-
-  }
-
-
-
-
   render() {
     return (
 
+
+
+
+      // Simple non-React Form form
       <form action="api/contact" method="post">
-        <input type="text" placeholder="Name" /> <br/>
-        <input type="email" placeholder="Email" /> <br/>
-        <input type="projectType" placeholder="Project Type" /> <br/>
-        <input type="message" placeholder="Message" />
-        <br/><br/>
-        <button type="submit">Let's Talk</button>
+
+        <input id="name" type="text" field="name" name="name" />
+
+        <button type="submit">Submit</button>
+
       </form>
+
+
+      // Simple React-Form sample
+      // <Form onSubmit={submittedValues => this.setState( { submittedValues } )}>
+      //   { formApi => (
+      //     <form onSubmit={formApi.submitForm}>
+      //
+      //       <Text field="name" id="name" />
+      //
+      //       <button type="submit">Submit</button>
+      //
+      //     </form>
+      //   )}
+      // </Form>
 
 
 
       // // <Form onSubmit={submittedValues => this.setState( { submittedValues } )}>
-      // <Form action="api/contact"
-      //     method="post" onSubmit={submittedValues => this.handleSubmit( { submittedValues } )}>
+      // <Form
+      //   action="api/contact"
+      //   method="post"
+      //   onSubmit={submittedValues => this.handleSubmit( { submittedValues } )}>
       //   { formApi => (
       //     <form
       //       onSubmit={formApi.submitForm}

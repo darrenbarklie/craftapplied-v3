@@ -2,6 +2,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 
+var expressValidator = require('express-validator')
+
 
 // Setup express app
 const app = express()
@@ -15,6 +17,13 @@ mongoose.Promise = global.Promise
 
 // Middleware : Body Parser
 app.use(bodyParser.json())
+
+
+
+// TEST : Middleware : Validator
+app.use(expressValidator())
+
+
 
 // Middleware : Initialize routes
 app.use('/api', require('./src/routes/api'))
