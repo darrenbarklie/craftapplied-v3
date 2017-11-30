@@ -14,21 +14,54 @@ export const Works = () => {
         <p>We've worked with clients from multiple industries:</p>
       </Col>
 
-      <Col lg={6} md={6} sm={6} xs={12} className="col">
-
+      <Col xs={12} sm={6}>
         <WorkObject
-          title="James LeBosquet"
-          type="App Design & Development"
-          linkTo="works/jlb"
+          title="Europcar Station Native App"
+          type="UI/UX Design"
+          linkTo="works/europcar"
           ratio="2/3"
           style={{
             color: '#202124',
             backgroundImage: `url(${TestImg})`,
-            backgroundPosition: 'center center'
+            backgroundPosition: 'left top'
+          }} />
+      </Col>
+
+      <Col xs={12} sm={6}>
+        <WorkObject
+          title="EnergeiaWorks Website"
+          type="Web Design & Development"
+          linkTo="works/energeiaworks"
+          ratio="4/3"
+          style={{
+            color: '#202124',
+            backgroundImage: `url(${TestImg})`,
+            backgroundPosition: 'center top'
           }} />
 
+          <WorkObject
+            title="Global PR Network Website"
+            type="Web Design & Development"
+            linkTo="works/globalprnetwork"
+            ratio="4/3"
+            style={{
+              color: '#202124',
+              backgroundImage: `url(${TestImg})`,
+              backgroundPosition: 'center center'
+            }} />
+      </Col>
 
-
+      <Col xs={12}>
+        <WorkObject
+          title="James LeBosquet Hairstyling Web App"
+          type="Web App Design & Development"
+          linkTo="works/jameslebosquet"
+          ratio="3/1"
+          style={{
+            color: '#202124',
+            backgroundImage: `url(${TestImg})`,
+            backgroundPosition: 'left top'
+          }} />
       </Col>
     </Row>
   )

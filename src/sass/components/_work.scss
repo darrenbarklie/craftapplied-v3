@@ -1,0 +1,34 @@
+#works {
+  width: 100%;
+  > div {
+    padding: 0;
+  }
+  .work-object {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    border: 8px solid $white;
+    .label {
+      position: absolute;
+      top: 1em;
+      left: 1.5em;
+      margin-right: 1.5em;
+      h3, span {
+        font-size: 1em;
+        padding: 0.5em 0;
+      }
+    }
+  }
+  // BUG : 4px artifact below --aspect-ratio function,
+  //       unavoidable magic numbers...
+  > div:nth-child(3) .work-object:nth-child(2) {
+    top: -28px;
+    border-top: 16px solid $white;
+  }
+  > div:nth-child(4) .work-object {
+    margin-top: -32px;
+  }
+  > div:nth-child(5) .work-object {
+    margin-top: -4px;
+  }
+}

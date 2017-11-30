@@ -26,8 +26,10 @@ export const WorkObject = (props) => {
           ratio={props.ratio}
           style={objectStyles}>
 
-          <h3>{props.title}</h3>
-          <span>{props.type}</span>
+          <div className="label">
+            <h3>{props.title}</h3>
+            <span>{props.type}</span>
+          </div>
 
         </AspectRatio>
 
