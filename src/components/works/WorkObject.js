@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import AspectRatio from 'react-aspect-ratio';
 
 
@@ -7,24 +8,31 @@ import AspectRatio from 'react-aspect-ratio';
 export const WorkObject = (props) => {
 
   var globalStyles = {
-    backgroundColor: 'grey',
+    backgroundColor: '#e2e5e8',
     backgroundSize: 'cover'
   };
 
   var objectStyles = Object.assign({},
-    props.color,
+    props.style,
     globalStyles
   )
 
   return (
     <div className="work-object">
 
-      <AspectRatio
-        ratio={props.ratio}
-        style={objectStyles}
-      >
-        <h3>{props.title}</h3>
-      </AspectRatio>
+      <Link to={props.linkTo}>
+
+        <AspectRatio
+          ratio={props.ratio}
+          style={objectStyles}>
+
+          <h3>{props.title}</h3>
+          <span>{props.type}</span>
+
+        </AspectRatio>
+
+      </Link>
+
 
     </div>
   )

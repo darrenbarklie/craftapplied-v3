@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-//import { Link } from 'react-router-dom'
+
 import { Row, Col } from 'react-flexbox-grid'
 
 import { WorkObject } from '../works'
 
+
+import TestImg from '../../assets/img/work/04-jlb@1x.jpg'
 
 export const Works = () => {
   return (
@@ -15,27 +17,19 @@ export const Works = () => {
       <Col lg={6} md={6} sm={6} xs={12} className="col">
 
         <WorkObject
-          title="Europcar Station App"
-          type="UI/UX Design"
-          linkTo=""
-          imgSrc=""
-          ratio="2/3"
-          style={{color: 'pink'}}
-        />
-
-        <WorkObject
           title="James LeBosquet"
           type="App Design & Development"
-          linkTo=""
-          imgSrc="http://www.petmd.com/sites/default/files/what-does-it-mean-when-cat-wags-tail.jpg"
+          linkTo="works/jlb"
           ratio="2/3"
-          style={{color: 'green'}}
-        
-        />
+          style={{
+            color: '#202124',
+            backgroundImage: `url(${TestImg})`,
+            backgroundPosition: 'center center'
+          }} />
+
+
 
       </Col>
-
-
     </Row>
   )
 }
