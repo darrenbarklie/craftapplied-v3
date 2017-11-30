@@ -1,3 +1,3 @@
 export { Home } from './Home'
 export { Splash } from './Splash'
-export { Portfolio } from './Portfolio'
+export { Works } from './Works'
