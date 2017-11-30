@@ -27,6 +27,7 @@
     "mongoose": "^4.13.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
+    "react-aspect-ratio": "^1.0.17",
     "react-dom": "^16.0.0",
     "react-flexbox-grid": "^2.0.0",
     "react-form": "^2.3.0",

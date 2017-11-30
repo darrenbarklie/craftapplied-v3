@@ -13,12 +13,24 @@ export const Works = () => {
       </Col>
 
       <Col lg={6} md={6} sm={6} xs={12} className="col">
+
         <WorkObject
           title="Europcar Station App"
           type="UI/UX Design"
           linkTo=""
           imgSrc=""
-          imgAlt=""
+          ratio="2/3"
+          style={{color: 'pink'}}
+        />
+
+        <WorkObject
+          title="James LeBosquet"
+          type="App Design & Development"
+          linkTo=""
+          imgSrc="http://www.petmd.com/sites/default/files/what-does-it-mean-when-cat-wags-tail.jpg"
+          ratio="2/3"
+          style={{color: 'green'}}
+        
         />
 
       </Col>
