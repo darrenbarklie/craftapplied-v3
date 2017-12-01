@@ -3,9 +3,11 @@ import React, { Component } from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 
 import { WorkObject } from '../works'
+import EuropcarImg from '../../assets/img/work/01-europcar@1x.jpg'
+import EnergeiaImg from '../../assets/img/work/02-energeiaworks@1x.jpg'
+import GlobalPRImg from '../../assets/img/work/03-globalpr@1x.jpg'
+import JLBImg from '../../assets/img/work/04-jlb@1x.jpg'
 
-
-import TestImg from '../../assets/img/work/04-jlb@1x.jpg'
 
 export const Works = () => {
   return (
@@ -22,7 +24,7 @@ export const Works = () => {
           ratio="2/3"
           style={{
             color: '#202124',
-            backgroundImage: `url(${TestImg})`,
+            backgroundImage: `url(${EuropcarImg})`,
             backgroundPosition: 'left top'
           }} />
       </Col>
@@ -35,7 +37,7 @@ export const Works = () => {
           ratio="4/3"
           style={{
             color: '#202124',
-            backgroundImage: `url(${TestImg})`,
+            backgroundImage: `url(${EnergeiaImg})`,
             backgroundPosition: 'center top'
           }} />
 
@@ -45,8 +47,8 @@ export const Works = () => {
             linkTo="works/globalprnetwork"
             ratio="4/3"
             style={{
-              color: '#202124',
-              backgroundImage: `url(${TestImg})`,
+              color: '#ffffff',
+              backgroundImage: `url(${GlobalPRImg})`,
               backgroundPosition: 'center center'
             }} />
       </Col>
@@ -59,8 +61,8 @@ export const Works = () => {
           ratio="3/1"
           style={{
             color: '#202124',
-            backgroundImage: `url(${TestImg})`,
-            backgroundPosition: 'left top'
+            backgroundImage: `url(${JLBImg})`,
+            backgroundPosition: 'center top'
           }} />
       </Col>
     </Row>
