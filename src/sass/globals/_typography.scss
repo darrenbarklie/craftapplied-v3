@@ -2,17 +2,10 @@
 $fontPath: "../assets/fonts" !default;
 
 /* --- Quick Reference
-
-  font-family: 'CaeciliaLTStd-BoldItalic', system;
-  font-family: 'CaeciliaLTStd-Roman', system;
-  font-family: 'CaeciliaLTStd-Light', system;
-  font-family: 'CaeciliaLTStd-Bold', system;
-  font-family: 'CaeciliaLTStd-Italic', system;
-
+  font-family: 'NeuzeitOffice-Regular', system;
+  font-family: 'NeuzeitOffice-Italic', system;
   font-family: 'NeuzeitOffice-Bold', system;
   font-family: 'NeuzeitOffice-BoldItalic', system;
-  font-family: 'NeuzeitOffice-Italic', system;
-  font-family: 'NeuzeitOffice-Regular', system;
 */
 
 /* System Fonts */
@@ -23,88 +16,7 @@ $fontPath: "../assets/fonts" !default;
   src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
-/* CaeciliaLTStd */
-// @font-face {
-//   font-family: 'CaeciliaLTStd-BoldItalic';
-//   src: url('#{$fontPath}/33F49F_4_0.eot');
-//   src: url('#{$fontPath}/33F49F_4_0.eot?#iefix') format('embedded-opentype'),
-//   url('#{$fontPath}/33F49F_4_0.woff2') format('woff2'),
-//   url('#{$fontPath}/33F49F_4_0.woff') format('woff'),
-//   url('#{$fontPath}/33F49F_4_0.ttf') format('truetype'),
-//   url('#{$fontPath}/33F49F_4_0.svg#wf') format('svg');
-// }
-//
-// @font-face {
-//   font-family: 'CaeciliaLTStd-Roman';
-//   src: url('#{$fontPath}/33F49F_5_0.eot');
-//   src: url('#{$fontPath}/33F49F_5_0.eot?#iefix') format('embedded-opentype'),
-//   url('#{$fontPath}/33F49F_5_0.woff2') format('woff2'),
-//   url('#{$fontPath}/33F49F_5_0.woff') format('woff'),
-//   url('#{$fontPath}/33F49F_5_0.ttf') format('truetype'),
-//   url('#{$fontPath}/33F49F_5_0.svg#wf') format('svg');
-// }
-//
-// @font-face {
-//   font-family: 'CaeciliaLTStd-Light';
-//   src: url('#{$fontPath}/33F49F_6_0.eot');
-//   src: url('#{$fontPath}/33F49F_6_0.eot?#iefix') format('embedded-opentype'),
-//   url('#{$fontPath}/33F49F_6_0.woff2') format('woff2'),
-//   url('#{$fontPath}/33F49F_6_0.woff') format('woff'),
-//   url('#{$fontPath}/33F49F_6_0.ttf') format('truetype'),
-//   url('#{$fontPath}/33F49F_6_0.svg#wf') format('svg');
-// }
-//
-// @font-face {
-//   font-family: 'CaeciliaLTStd-Bold';
-//   src: url('#{$fontPath}/33F49F_7_0.eot');
-//   src: url('#{$fontPath}/33F49F_7_0.eot?#iefix') format('embedded-opentype'),
-//   url('#{$fontPath}/33F49F_7_0.woff2') format('woff2'),
-//   url('#{$fontPath}/33F49F_7_0.woff') format('woff'),
-//   url('#{$fontPath}/33F49F_7_0.ttf') format('truetype'),
-//   url('#{$fontPath}/33F49F_7_0.svg#wf') format('svg');
-// }
-//
-// @font-face {
-//   font-family: 'CaeciliaLTStd-Italic';
-//   src: url('#{$fontPath}/33F49F_8_0.eot');
-//   src: url('#{$fontPath}/33F49F_8_0.eot?#iefix') format('embedded-opentype'),
-//   url('#{$fontPath}/33F49F_8_0.woff2') format('woff2'),
-//   url('#{$fontPath}/33F49F_8_0.woff') format('woff'),
-//   url('#{$fontPath}/33F49F_8_0.ttf') format('truetype'),
-//   url('#{$fontPath}/33F49F_8_0.svg#wf') format('svg');
-// }
-
 /* NeuzeitOffice Fonts */
-@font-face {
-  font-family: 'NeuzeitOffice-Bold';
-  src: url('#{$fontPath}/33F49F_0_0.eot');
-  src: url('#{$fontPath}/33F49F_0_0.eot?#iefix') format('embedded-opentype'),
-  url('#{$fontPath}/33F49F_0_0.woff2') format('woff2'),
-  url('#{$fontPath}/33F49F_0_0.woff') format('woff'),
-  url('#{$fontPath}/33F49F_0_0.ttf') format('truetype'),
-  url('#{$fontPath}/33F49F_0_0.svg#wf') format('svg');
-}
-
-@font-face {
-  font-family: 'NeuzeitOffice-BoldItalic';
-  src: url('#{$fontPath}/33F49F_1_0.eot');
-  src: url('#{$fontPath}/33F49F_1_0.eot?#iefix') format('embedded-opentype'),
-  url('#{$fontPath}/33F49F_1_0.woff2') format('woff2'),
-  url('#{$fontPath}/33F49F_1_0.woff') format('woff'),
-  url('#{$fontPath}/33F49F_1_0.ttf') format('truetype'),
-  url('#{$fontPath}/33F49F_1_0.svg#wf') format('svg');
-}
-
-@font-face {
-  font-family: 'NeuzeitOffice-Italic';
-  src: url('#{$fontPath}/33F49F_2_0.eot');
-  src: url('#{$fontPath}/33F49F_2_0.eot?#iefix') format('embedded-opentype'),
-  url('#{$fontPath}/33F49F_2_0.woff2') format('woff2'),
-  url('#{$fontPath}/33F49F_2_0.woff') format('woff'),
-  url('#{$fontPath}/33F49F_2_0.ttf') format('truetype'),
-  url('#{$fontPath}/33F49F_2_0.svg#wf') format('svg');
-}
-
 @font-face {
   font-family: 'NeuzeitOffice-Regular';
   src: url('#{$fontPath}/33F49F_3_0.eot');
@@ -113,7 +25,43 @@ $fontPath: "../assets/fonts" !default;
   url('#{$fontPath}/33F49F_3_0.woff') format('woff'),
   url('#{$fontPath}/33F49F_3_0.ttf') format('truetype'),
   url('#{$fontPath}/33F49F_3_0.svg#wf') format('svg');
+  font-weight: 300;
+  font-style: normal;
 }
+@font-face {
+  font-family: 'NeuzeitOffice-Italic';
+  src: url('#{$fontPath}/33F49F_2_0.eot');
+  src: url('#{$fontPath}/33F49F_2_0.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontPath}/33F49F_2_0.woff2') format('woff2'),
+  url('#{$fontPath}/33F49F_2_0.woff') format('woff'),
+  url('#{$fontPath}/33F49F_2_0.ttf') format('truetype'),
+  url('#{$fontPath}/33F49F_2_0.svg#wf') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'NeuzeitOffice-Bold';
+  src: url('#{$fontPath}/33F49F_0_0.eot');
+  src: url('#{$fontPath}/33F49F_0_0.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontPath}/33F49F_0_0.woff2') format('woff2'),
+  url('#{$fontPath}/33F49F_0_0.woff') format('woff'),
+  url('#{$fontPath}/33F49F_0_0.ttf') format('truetype'),
+  url('#{$fontPath}/33F49F_0_0.svg#wf') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NeuzeitOffice-BoldItalic';
+  src: url('#{$fontPath}/33F49F_1_0.eot');
+  src: url('#{$fontPath}/33F49F_1_0.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontPath}/33F49F_1_0.woff2') format('woff2'),
+  url('#{$fontPath}/33F49F_1_0.woff') format('woff'),
+  url('#{$fontPath}/33F49F_1_0.ttf') format('truetype'),
+  url('#{$fontPath}/33F49F_1_0.svg#wf') format('svg');
+  font-weight: 600;
+  font-style: italic;
+}
+
 
 /* Global Base Styles */
 body {
@@ -125,63 +73,53 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'NeuzeitOffice-Bold', serif;
   line-height: 1.333;
+  padding: 0 0 0.5em;
 }
-h1 { font-size: 4.209em; }
-h2 { font-size: 3.157em; }
-h3 { font-size: 2.369em; }
-h4 { font-size: 1.777em; }
-h5 { font-size: 1.333em; margin-bottom: 0.2em; }
-h6 { font-size: 1em; margin-bottom: 0.25em; }
+h1, .display-text { font-size: 4.209rem; }
+h2, .header-text  { font-size: 3.157rem; }
+h3, .title-text { font-size: 2.369rem; }
+h4, .subheader-text { font-size: 1.777rem; }
+h5 { font-size: 1.333rem; margin-bottom: 0.2rem; }
+h6 { font-size: 1rem; margin-bottom: 0.25rem; }
+
 p {
   font-family: 'NeuzeitOffice-Regular', system;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   line-height: 1.333;
 }
-
 em {
   font-family: 'NeuzeitOffice-Italic', system;
-  font-weight: 400;
-  font-style: italic;
-}
-em.light {
-  font-family: 'NeuzeitOffice-Italic', system;
-  font-weight: 200;
+  font-weight: 300;
   font-style: italic;
 }
 em.strong {
   font-family: 'NeuzeitOffice-Italic', system;
-  font-weight: 700;
+  font-weight: 600;
   font-style: italic;
 }
 strong {
   font-family: 'NeuzeitOffice-Bold', system;
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
 }
 em > strong,
 strong > em {
   font-family: 'NeuzeitOffice-BoldItalic', system;
-  font-weight: bold;
+  font-weight: 600;
   font-style: italic;
 }
-
-
-
-
-
-
 ul {
   list-style: none;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.333;
-  margin: 0 0 1em 3em;
+  margin: 0 0 1em 1rem;
   li {
-    margin: 0 0 0.33em 0;
+    margin: 0 0 0.33rem 0;
     &::before {
       content: "■";
       font-family: "Arial";
       color: $spring-green;
-      padding-right: 0.75em;
+      padding-right: 0.75rem;
     }
   }
 }
@@ -198,5 +136,25 @@ a {
   &:active {
     color: darken($spring-green, 10%);
     transition: color 0.1s linear;
+  }
+}
+.caption-text {
+  font-family: 'NeuzeitOffice-Regular', system;
+  font-size: 0.9rem;
+  line-height: 1.43;
+  strong {
+    font-family: 'NeuzeitOffice-Bold', system;
+    font-weight: 600;
+    font-style: bold;
+  }
+}
+.small-text {
+  font-family: 'NeuzeitOffice-Regular', system;
+  font-size: 0.75rem;
+  line-height: 1.33;
+  strong {
+    font-family: 'NeuzeitOffice-Bold', system;
+    font-weight: 600;
+    font-style: bold;
   }
 }
