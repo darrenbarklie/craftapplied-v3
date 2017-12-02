@@ -13,7 +13,6 @@ export const SplashGraphic = () => {
   }
   calcViewportHgt()
 
-
   return (
     <div className="splash-graphic">
       <AspectRatio

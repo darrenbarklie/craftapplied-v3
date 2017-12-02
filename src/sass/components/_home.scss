@@ -16,6 +16,13 @@
     }
   }
   #works {
-
+    p {
+      font-family: 'NeuzeitOffice-Bold', system;
+      font-size: 2rem;
+      color: $spring-green;
+    }
+    .cta {
+      margin: 1rem 0;
+    }
   }
 }

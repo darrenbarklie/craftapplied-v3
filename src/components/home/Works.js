@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'react-flexbox-grid'
+import { Link } from 'react-router-dom'
 
+import { CtaStandard } from '../globals'
 import { WorkObject } from '../works'
 import EuropcarImg from '../../assets/img/work/01-europcar@1x.jpg'
 import EnergeiaImg from '../../assets/img/work/02-energeiaworks@1x.jpg'
@@ -12,7 +14,7 @@ export const Works = () => {
   return (
     <Row id="works" className="section">
       <Col xs={12}>
-        <p>We've worked with clients from multiple industries:</p>
+        <p>We've worked with clients across multiple industries:</p>
       </Col>
 
       <Col xs={12} sm={6}>
@@ -64,6 +66,14 @@ export const Works = () => {
             backgroundPosition: 'center top'
           }} />
       </Col>
+
+      <Col xs={12}>
+        <Row center="xs">
+            <Link to="/works" className="cta cta-animated">View more of our works</Link>
+        </Row>
+      </Col>
+
+
     </Row>
   )
 }
