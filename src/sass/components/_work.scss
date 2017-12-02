@@ -23,8 +23,8 @@
       }
     }
   }
-  // BUG : 4px artifact below --aspect-ratio function,
-  //       unavoidable magic numbers...
+  // NOTE : 4px artifact below --aspect-ratio function,
+  //        unavoidable magic numbers...
   > div:nth-child(3) .work-object:nth-child(2) {
     top: -28px;
     border-top: 16px solid $white;

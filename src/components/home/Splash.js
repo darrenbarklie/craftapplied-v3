@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col } from 'react-flexbox-grid'
+import AspectRatio from 'react-aspect-ratio'
+
+import SplashImg from '../../assets/img/home/graphic-splash.png'
 
 
 export const Splash = () => {
@@ -22,7 +25,22 @@ export const Splash = () => {
 
 
       <Col xs={12} md={6}>
-        <h6 style={{color: 'red'}}>TODO: Mobile image here</h6>
+
+        <AspectRatio
+          ratio="496/720"
+          style={{
+            backgroundImage: `url(${SplashImg})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center top',
+            backgroundSize: 'contain',
+            maxWidth: 496,
+          }}
+        >
+
+
+
+        </AspectRatio>
+
       </Col>
 
     </Row>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import AspectRatio from 'react-aspect-ratio';
+import AspectRatio from 'react-aspect-ratio'
 
 
 

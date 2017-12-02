@@ -24,55 +24,55 @@ $fontPath: "../assets/fonts" !default;
 }
 
 /* CaeciliaLTStd */
-@font-face {
-  font-family: 'CaeciliaLTStd-BoldItalic';
-  src: url('#{$fontPath}/33F49F_4_0.eot');
-  src: url('#{$fontPath}/33F49F_4_0.eot?#iefix') format('embedded-opentype'),
-  url('#{$fontPath}/33F49F_4_0.woff2') format('woff2'),
-  url('#{$fontPath}/33F49F_4_0.woff') format('woff'),
-  url('#{$fontPath}/33F49F_4_0.ttf') format('truetype'),
-  url('#{$fontPath}/33F49F_4_0.svg#wf') format('svg');
-}
-
-@font-face {
-  font-family: 'CaeciliaLTStd-Roman';
-  src: url('#{$fontPath}/33F49F_5_0.eot');
-  src: url('#{$fontPath}/33F49F_5_0.eot?#iefix') format('embedded-opentype'),
-  url('#{$fontPath}/33F49F_5_0.woff2') format('woff2'),
-  url('#{$fontPath}/33F49F_5_0.woff') format('woff'),
-  url('#{$fontPath}/33F49F_5_0.ttf') format('truetype'),
-  url('#{$fontPath}/33F49F_5_0.svg#wf') format('svg');
-}
-
-@font-face {
-  font-family: 'CaeciliaLTStd-Light';
-  src: url('#{$fontPath}/33F49F_6_0.eot');
-  src: url('#{$fontPath}/33F49F_6_0.eot?#iefix') format('embedded-opentype'),
-  url('#{$fontPath}/33F49F_6_0.woff2') format('woff2'),
-  url('#{$fontPath}/33F49F_6_0.woff') format('woff'),
-  url('#{$fontPath}/33F49F_6_0.ttf') format('truetype'),
-  url('#{$fontPath}/33F49F_6_0.svg#wf') format('svg');
-}
-
-@font-face {
-  font-family: 'CaeciliaLTStd-Bold';
-  src: url('#{$fontPath}/33F49F_7_0.eot');
-  src: url('#{$fontPath}/33F49F_7_0.eot?#iefix') format('embedded-opentype'),
-  url('#{$fontPath}/33F49F_7_0.woff2') format('woff2'),
-  url('#{$fontPath}/33F49F_7_0.woff') format('woff'),
-  url('#{$fontPath}/33F49F_7_0.ttf') format('truetype'),
-  url('#{$fontPath}/33F49F_7_0.svg#wf') format('svg');
-}
-
-@font-face {
-  font-family: 'CaeciliaLTStd-Italic';
-  src: url('#{$fontPath}/33F49F_8_0.eot');
-  src: url('#{$fontPath}/33F49F_8_0.eot?#iefix') format('embedded-opentype'),
-  url('#{$fontPath}/33F49F_8_0.woff2') format('woff2'),
-  url('#{$fontPath}/33F49F_8_0.woff') format('woff'),
-  url('#{$fontPath}/33F49F_8_0.ttf') format('truetype'),
-  url('#{$fontPath}/33F49F_8_0.svg#wf') format('svg');
-}
+// @font-face {
+//   font-family: 'CaeciliaLTStd-BoldItalic';
+//   src: url('#{$fontPath}/33F49F_4_0.eot');
+//   src: url('#{$fontPath}/33F49F_4_0.eot?#iefix') format('embedded-opentype'),
+//   url('#{$fontPath}/33F49F_4_0.woff2') format('woff2'),
+//   url('#{$fontPath}/33F49F_4_0.woff') format('woff'),
+//   url('#{$fontPath}/33F49F_4_0.ttf') format('truetype'),
+//   url('#{$fontPath}/33F49F_4_0.svg#wf') format('svg');
+// }
+//
+// @font-face {
+//   font-family: 'CaeciliaLTStd-Roman';
+//   src: url('#{$fontPath}/33F49F_5_0.eot');
+//   src: url('#{$fontPath}/33F49F_5_0.eot?#iefix') format('embedded-opentype'),
+//   url('#{$fontPath}/33F49F_5_0.woff2') format('woff2'),
+//   url('#{$fontPath}/33F49F_5_0.woff') format('woff'),
+//   url('#{$fontPath}/33F49F_5_0.ttf') format('truetype'),
+//   url('#{$fontPath}/33F49F_5_0.svg#wf') format('svg');
+// }
+//
+// @font-face {
+//   font-family: 'CaeciliaLTStd-Light';
+//   src: url('#{$fontPath}/33F49F_6_0.eot');
+//   src: url('#{$fontPath}/33F49F_6_0.eot?#iefix') format('embedded-opentype'),
+//   url('#{$fontPath}/33F49F_6_0.woff2') format('woff2'),
+//   url('#{$fontPath}/33F49F_6_0.woff') format('woff'),
+//   url('#{$fontPath}/33F49F_6_0.ttf') format('truetype'),
+//   url('#{$fontPath}/33F49F_6_0.svg#wf') format('svg');
+// }
+//
+// @font-face {
+//   font-family: 'CaeciliaLTStd-Bold';
+//   src: url('#{$fontPath}/33F49F_7_0.eot');
+//   src: url('#{$fontPath}/33F49F_7_0.eot?#iefix') format('embedded-opentype'),
+//   url('#{$fontPath}/33F49F_7_0.woff2') format('woff2'),
+//   url('#{$fontPath}/33F49F_7_0.woff') format('woff'),
+//   url('#{$fontPath}/33F49F_7_0.ttf') format('truetype'),
+//   url('#{$fontPath}/33F49F_7_0.svg#wf') format('svg');
+// }
+//
+// @font-face {
+//   font-family: 'CaeciliaLTStd-Italic';
+//   src: url('#{$fontPath}/33F49F_8_0.eot');
+//   src: url('#{$fontPath}/33F49F_8_0.eot?#iefix') format('embedded-opentype'),
+//   url('#{$fontPath}/33F49F_8_0.woff2') format('woff2'),
+//   url('#{$fontPath}/33F49F_8_0.woff') format('woff'),
+//   url('#{$fontPath}/33F49F_8_0.ttf') format('truetype'),
+//   url('#{$fontPath}/33F49F_8_0.svg#wf') format('svg');
+// }
 
 /* NeuzeitOffice Fonts */
 @font-face {
@@ -119,6 +119,7 @@ $fontPath: "../assets/fonts" !default;
 body {
   font-family: 'NeuzeitOffice-Regular', system;
   font-size: 18px;
+  line-height: 1.5;
   color: $black;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -136,6 +137,39 @@ p {
   margin-bottom: 1em;
   line-height: 1.333;
 }
+
+em {
+  font-family: 'NeuzeitOffice-Italic', system;
+  font-weight: 400;
+  font-style: italic;
+}
+em.light {
+  font-family: 'NeuzeitOffice-Italic', system;
+  font-weight: 200;
+  font-style: italic;
+}
+em.strong {
+  font-family: 'NeuzeitOffice-Italic', system;
+  font-weight: 700;
+  font-style: italic;
+}
+strong {
+  font-family: 'NeuzeitOffice-Bold', system;
+  font-weight: bold;
+  font-style: normal;
+}
+em > strong,
+strong > em {
+  font-family: 'NeuzeitOffice-BoldItalic', system;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+
+
+
+
 ul {
   list-style: none;
   font-size: 1em;
