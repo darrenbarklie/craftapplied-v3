@@ -1,2 +1,2 @@
 export { Works } from './Works'
-export { WorkObject } from './WorkObject'
+export { default as WorkObject } from './WorkObject'

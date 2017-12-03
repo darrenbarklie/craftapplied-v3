@@ -10,8 +10,6 @@ export const Works = () => {
 
     <Row className="page works">
 
-
-
       <Row id="works" className="section">
         <Col xs={12}>
           <p>We've worked with clients across multiple industries:</p>
@@ -67,16 +65,6 @@ export const Works = () => {
             }} />
         </Col>
       </Row>
-
-
-
-
     </Row>
-
-
-
-
-
-
   )
 }
