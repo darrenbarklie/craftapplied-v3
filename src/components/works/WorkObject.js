@@ -12,24 +12,34 @@ class WorkObject extends Component {
       width: 0,
       height: 0,
     }
+
+    this.setDimensions = this.setDimensions.bind(this)
   }
 
-  componentDidMount() {
-    const width = this.divElement.clientWidth
+  // Set width & height from element self-reference to component state
+  setDimensions() {
+    let width = this.divElement.clientWidth
     this.setState({ width })
-
-    const height = this.divElement.clientHeight
+    let height = this.divElement.clientHeight
     this.setState({ height })
   }
 
-  render() {
+  componentDidMount() {
+    this.setDimensions()
+    window.addEventListener("resize", this.setDimensions);
+  }
 
-    let globalStyles = {
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.setDimensions);
+  }
+
+  render() {
+    // Concat declared globalStyles and props.styles to single object
+    const globalStyles = {
       backgroundColor: '#e2e5e8',
       backgroundSize: 'cover'
     };
-
-    let objectStyles = Object.assign({},
+    const objectStyles = Object.assign({},
       this.props.style,
       globalStyles
     )
