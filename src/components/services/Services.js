@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 
-import DesignImg from '../../assets/img/services/illus-design.svg'
-import DevImg from '../../assets/img/services/illus-dev.svg'
-import BuildImg from '../../assets/img/services/illus-build.svg'
-
+import { DesignImg, DevImg, BuildImg } from '../../assets/img/services'
 
 
 export class Services extends Component {

@@ -27,6 +27,9 @@ nav.primary {
       }
       a {
         padding: 1rem 1.5rem;
+        &.active {
+          color: $black;
+        }
       }
     }
   }

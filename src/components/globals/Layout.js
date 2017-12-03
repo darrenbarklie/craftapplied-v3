@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import { Grid } from 'react-flexbox-grid'
 
 import { ErrorBoundary, Header } from '.'
-import { Home, Services, Contact } from '.'
+import { Home, Services, Works, Contact } from '.'
 
 
 export const Layout = () => {
@@ -21,7 +21,7 @@ export const Layout = () => {
 
           <Route path="/services" component={Services} />
 
-          <Route path="/work" render={() => <h1>Work</h1>} />
+          <Route path="/work" component={Works} />
 
           <Route path="/blog" render={() => <h1>Blog</h1>} />
 
