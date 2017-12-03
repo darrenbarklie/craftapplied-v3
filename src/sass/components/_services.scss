@@ -1,3 +1,60 @@
 .page.services {
-  
+  h2 {
+    color: $spring-green;
+    margin-bottom: 0.5em;
+  }
+  h3 {
+    font-size: 1.5rem;
+    color: $spring-green;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  #design-services {
+    ul {
+      margin: 0.33em 0;
+      li {
+        font-size: 1.5rem;
+        padding: 0.33em 0;
+        &::before {
+          content: "";
+          display: none;
+        }
+      }
+    }
+  }
+  #development-services {
+    ul {
+      margin: 0.33em 0;
+      li {
+        font-size: 1.5rem;
+        padding: 0.33em 0;
+        &::before {
+          content: "";
+          display: none;
+        }
+      }
+    }
+  }
+  #build-services {
+    img {
+      margin-bottom: 2rem;
+    }
+    ul {
+      text-align: left;
+      margin-top: 0.33em;
+      margin-bottom: 0.33em;
+      li {
+        font-size: 1.5rem;
+        &::before {
+          content: "•";
+          position: relative;
+          top: 0.05em;
+        }
+      }
+    }
+  }
 }
