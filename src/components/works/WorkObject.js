@@ -9,24 +9,54 @@ class WorkObject extends Component {
     super(props)
 
     this.state = {
-      height: 0
+      width: 0,
+      height: 0,
     }
   }
 
   componentDidMount() {
-    console.log('Mounted here --------------------')
-    const height = this.divElement.clientHeight;
+    const width = this.divElement.clientWidth
+    this.setState({ width })
+
+    const height = this.divElement.clientHeight
     this.setState({ height })
   }
 
   render() {
+
+    let globalStyles = {
+      backgroundColor: '#e2e5e8',
+      backgroundSize: 'cover'
+    };
+
+    let objectStyles = Object.assign({},
+      this.props.style,
+      globalStyles
+    )
+
     return (
-      <div
-        className="work-object"
-        style={{border: '1px solid red'}}
-        ref={ (divElement) => this.divElement = divElement}
-        >
-        Height: {this.state.height}px
+      <div className="work-object"
+        ref={ (divElement) => this.divElement = divElement}>
+
+          <Link to={this.props.linkTo}>
+
+            <AspectRatio
+              ratio={this.props.ratio}
+              style={objectStyles}>
+
+              <div className="label">
+                <h3>{this.props.title}</h3>
+                <span>{this.props.type}</span>
+
+
+                <h3>Width: {this.state.width}</h3>
+                <h3>Height: {this.state.height}</h3>
+
+              </div>
+
+            </AspectRatio>
+
+          </Link>
       </div>
     )
   }
