@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 import { Link } from 'react-router-dom'
 
-import { CtaStandard } from '../globals'
 import { WorkObject } from '../works'
 import EuropcarImg from '../../assets/img/work/01-europcar@1x.jpg'
 import EnergeiaImg from '../../assets/img/work/02-energeiaworks@1x.jpg'
