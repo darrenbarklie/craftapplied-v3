@@ -2,18 +2,18 @@ import React, { Component } from 'react'
 
 export const WorkObjectCover = (props) => {
   let coverLeftStyles = {
-    position: 'absolute',
+    //position: 'absolute',
     borderStyle: 'solid',
     borderColor: 'transparent transparent transparent #00cc66',
     borderWidth: `${props.height}px 0 0 ${props.width}px`,
-    left: 0
+    //left: 0
   }
   let coverRightStyles = {
-    position: 'absolute',
+    //position: 'absolute',
     borderStyle: 'solid',
-    borderColor: 'transparent transparent transparent #00cc66',
+    borderColor: 'transparent #ffcc99 transparent transparent',
     borderWidth: `0 ${props.width}px ${props.height}px 0`,
-    right: 0
+    //right: 0
   }
 
 
@@ -24,8 +24,8 @@ export const WorkObjectCover = (props) => {
 
         <div className="triangle-left"
           style={coverLeftStyles}></div>
-        {/* <div className="triangle-right"
-          style={coverRightStyles}></div> */}
+        <div className="triangle-right"
+          style={coverRightStyles}></div>
 
         {props.children}
 
