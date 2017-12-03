@@ -1,4 +1,7 @@
-html,
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 body {
   //height: 100%;
   box-sizing: border-box;

@@ -63,7 +63,7 @@ export const Works = () => {
             style={{
               color: '#202124',
               backgroundImage: `url(${JLBImg1x})`,
-              backgroundPosition: 'center top'
+              backgroundPosition: 'center 10%'
             }} />
         </Col>
       </Row>
