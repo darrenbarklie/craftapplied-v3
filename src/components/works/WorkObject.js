@@ -35,11 +35,11 @@ class WorkObject extends Component {
 
   render() {
     // Concat declared globalStyles and props.styles to single object
-    const globalStyles = {
+    let globalStyles = {
       backgroundColor: '#e2e5e8',
       backgroundSize: 'cover'
     };
-    const objectStyles = Object.assign({},
+    let objectStyles = Object.assign({},
       this.props.style,
       globalStyles
     )
@@ -54,15 +54,16 @@ class WorkObject extends Component {
               ratio={this.props.ratio}
               style={objectStyles}>
 
-              <div className="label">
-                <h3>{this.props.title}</h3>
-                <span>{this.props.type}</span>
+              <WorkObjectCover
+                width={this.state.width}
+                height={this.state.height}>
 
+                <div className="label">
+                  <h3>{this.props.title}</h3>
+                  <span>{this.props.type}</span>
+                </div>
 
-                <h3>Width: {this.state.width}</h3>
-                <h3>Height: {this.state.height}</h3>
-
-              </div>
+              </WorkObjectCover>
 
             </AspectRatio>
 
@@ -71,95 +72,4 @@ class WorkObject extends Component {
     )
   }
 }
-
 export default WorkObject
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// export const WorkObject = (props) => {
-//
-//
-//   var elementHeight = 22
-//
-//
-//   var globalStyles = {
-//     backgroundColor: '#e2e5e8',
-//     backgroundSize: 'cover'
-//   };
-//
-//   var objectStyles = Object.assign({},
-//     props.style,
-//     globalStyles
-//   )
-//
-//   return (
-//     <div className="work-object">
-//
-//       <Link to={props.linkTo}>
-//
-//         <AspectRatio
-//           ratio={props.ratio}
-//           style={objectStyles}>
-//
-//           <WorkObjectCover>
-//
-//             <div className="label">
-//               <h3>{props.title}</h3>
-//               <span>{props.type}</span>
-//
-//               <h3>{elementHeight}</h3>
-//
-//             </div>
-//
-//           </WorkObjectCover>
-//         </AspectRatio>
-//       </Link>
-//     </div>
-//   )
-
-// ------------------------------------- //
-
-  // return (
-  //   <div className="work-object">
-  //
-  //     <Link to={props.linkTo}>
-  //
-  //       <AspectRatio
-  //         ratio={props.ratio}
-  //         style={objectStyles}>
-  //
-  //         <div className="label">
-  //           <h3>{props.title}</h3>
-  //           <span>{props.type}</span>
-  //         </div>
-  //
-  //       </AspectRatio>
-  //
-  //     </Link>
-  //   </div>
-  // )
-//}
