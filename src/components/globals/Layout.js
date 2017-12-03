@@ -21,7 +21,7 @@ export const Layout = () => {
 
           <Route path="/services" component={Services} />
 
-          <Route path="/work" component={Works} />
+          <Route path="/works" component={Works} />
 
           <Route path="/blog" render={() => <h1>Blog</h1>} />
 

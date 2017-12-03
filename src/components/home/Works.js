@@ -65,11 +65,9 @@ export const Works = () => {
 
       <Col xs={12}>
         <Row center="xs">
-            <Link to="/works" className="cta cta-animated">View more of our works</Link>
+          <Link to="/works" className="cta cta-animated">View more of our works</Link>
         </Row>
       </Col>
-
-
     </Row>
   )
 }
