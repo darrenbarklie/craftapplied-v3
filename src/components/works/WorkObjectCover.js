@@ -11,15 +11,19 @@ export const WorkObjectCover = (props) => {
   return (
     <div className="work-object-cover">
 
-      <div className="triangle-left"
+      {props.children}
+
+      <div className="cover-triangle-left"
         style={coverLeftStyle}></div>
 
-      <div className="triangle-right"
+      <div className="cover-triangle-right"
         style={coverRightStyle}></div>
 
-      <div className="full-size"></div>
+      <div className="cover-fullsize"></div>
 
-      {props.children}
+      <div className="cover-cta">
+        <span>Visit Project Page</span>
+      </div>
 
     </div>
   )
