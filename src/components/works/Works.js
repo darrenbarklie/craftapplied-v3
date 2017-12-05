@@ -12,14 +12,14 @@ export const Works = () => {
 
       <Row id="works" className="section">
         <Col xs={12}>
-          <p>We've worked with clients across multiple industries:</p>
+          <p>We've collaborated with clients across multiple industries:</p>
         </Col>
 
         <Col xs={12} sm={6}>
           <WorkObject
             title="Europcar Station Native App"
             type="UI/UX Design"
-            linkTo="works/europcar"
+            linkTo="/europcar"
             ratio="2/3"
             style={{
               color: '#202124',
@@ -32,7 +32,7 @@ export const Works = () => {
           <WorkObject
             title="EnergeiaWorks Website"
             type="Web Design & Development"
-            linkTo="works/energeiaworks"
+            linkTo="/energeiaworks"
             ratio="4/3"
             style={{
               color: '#202124',
@@ -43,7 +43,7 @@ export const Works = () => {
             <WorkObject
               title="Global PR Network Website"
               type="Web Design & Development"
-              linkTo="works/globalprnetwork"
+              linkTo="/globalprnetwork"
               ratio="4/3"
               style={{
                 color: '#ffffff',
@@ -56,7 +56,7 @@ export const Works = () => {
           <WorkObject
             title="James LeBosquet Hairstyling Web App"
             type="Web App Design & Development"
-            linkTo="works/jameslebosquet"
+            linkTo="/jameslebosquet"
             ratio="3/1"
             style={{
               color: '#202124',
