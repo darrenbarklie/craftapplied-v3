@@ -6,8 +6,8 @@ Craft Applied homepage build
 - [x] Configure webpack
 - [x] Install React
 - [x] Configure components
-- [ ] Configure storage
-- [ ] Configure api
+- [x] Configure storage
+- [x] Configure api
 - [x] Configure router
 - [x] Configure navigation
 - [x] Configure typography

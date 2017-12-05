@@ -10,15 +10,15 @@ export const Header = (props) => {
       <Grid fluid className="grid-container">
         <Row>
 
-        <Col className="brand">
-          <NavLink exact activeClassName="active" to="/">
-            <Brand />
-          </NavLink>
-        </Col>
+          <Col className="brand">
+            <NavLink exact activeClassName="active" to="/">
+              <Brand />
+            </NavLink>
+          </Col>
 
-        <Col className="nav-primary">
-          <Navigation />
-        </Col>
+          <Col className="nav-primary">
+            <Navigation />
+          </Col>
 
         </Row>
       </Grid>

@@ -95,7 +95,7 @@ export class Services extends Component {
           </Row>
 
 
-          <Row id="build-services" className="section" center="xs">
+          {/* <Row id="build-services" className="section" center="xs">
             <Col xs={12}>
               <img src={BuildImg} alt="Build illustration" />
             </Col>
@@ -143,7 +143,7 @@ export class Services extends Component {
                 </Col>
               </Row>
             </Col>
-          </Row>
+          </Row> */}
         </Col>
       </Row>
     )
