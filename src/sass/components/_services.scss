@@ -16,9 +16,11 @@
   img {
     display: block;
     max-width: 100%;
-    height: auto;
     padding: 0 40px;
     margin: 2rem auto;
+    @media (max-width: 767px) {
+      height: 20rem;
+    }
   }
   #design-services {
     ul {
@@ -46,18 +48,26 @@
       }
     }
     @media (max-width: 767px) {
-      background: rgba(blue,0.2);
       flex-direction: column-reverse;
     }
   }
   #build-services {
     img {
       margin-bottom: 2rem;
+      @media (max-width: 767px) {
+        height: 7rem;
+      }
+      @media (max-width: 1200px) and (min-width: 767px) {
+        width: 80%;
+      }
     }
     ul {
       text-align: left;
-      margin-top: 0.33em;
-      margin-bottom: 0.33em;
+      margin-top: 0.33rem;
+      margin-bottom: 0.33rem;
+      @media (max-width: 767px) {
+        margin-bottom: 1rem;
+      }
       li {
         font-size: 1.5rem;
         &::before {
@@ -66,6 +76,12 @@
           top: 0.05em;
         }
       }
+    }
+  }
+  @media (max-width: 1200px) {
+    .section {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
   }
 }

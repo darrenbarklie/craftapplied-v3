@@ -21,7 +21,7 @@ export class Services extends Component {
               <p>Our user-focused approach to design ensures that our creative solutions are efficient, effective, and attractive.</p>
 
               <Row>
-                <Col xs={6}>
+                <Col xs={12} sm={6}>
                   <h3 className="subheader-text">Creative &amp; Research</h3>
                   <ul>
                     <li>Market Research</li>
@@ -35,7 +35,7 @@ export class Services extends Component {
                   </ul>
                 </Col>
 
-                <Col xs={6}>
+                <Col xs={12} sm={6}>
                   <h3 className="subheader-text">Tools</h3>
                   <ul>
                     <li>Pencil &amp; Paper</li>
@@ -95,7 +95,7 @@ export class Services extends Component {
           </Row>
 
 
-          {/* <Row id="build-services" className="section" center="xs">
+          <Row id="build-services" className="section" center="xs">
             <Col xs={12}>
               <img src={BuildImg} alt="Build illustration" />
             </Col>
@@ -106,7 +106,7 @@ export class Services extends Component {
               <p>We produce assets, resources and systems to effeciently evaluate, test and solve business and creative challenges:</p>
 
               <Row>
-                <Col xs={3}>
+                <Col xs={12} sm={6} lg={3}>
                   <ul>
                     <li>Websites</li>
                     <li>Native &amp; Web Apps</li>
@@ -115,7 +115,7 @@ export class Services extends Component {
                   </ul>
                 </Col>
 
-                <Col xs={3}>
+                <Col xs={12} sm={6} lg={3}>
                   <ul>
                     <li>Information Architecture</li>
                     <li>Experience Map</li>
@@ -124,7 +124,7 @@ export class Services extends Component {
                   </ul>
                 </Col>
 
-                <Col xs={3}>
+                <Col xs={12} sm={6} lg={3}>
                   <ul>
                     <li>UI Design System</li>
                     <li>Custom Icons</li>
@@ -133,7 +133,7 @@ export class Services extends Component {
                   </ul>
                 </Col>
 
-                <Col xs={3}>
+                <Col xs={12} sm={6} lg={3}>
                   <ul>
                     <li>Front-end Toolkit</li>
                     <li>Front-end Template</li>
@@ -143,7 +143,7 @@ export class Services extends Component {
                 </Col>
               </Row>
             </Col>
-          </Row> */}
+          </Row>
         </Col>
       </Row>
     )
