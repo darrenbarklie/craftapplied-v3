@@ -8,15 +8,16 @@ const ContactMessageSchema = new Schema({
   },
   email: {
     type: String,
-    //required: [true, 'Email is required']
+    required: [true, 'Email is required']
   },
+  // TODO : type to select, required
   projectType: {
     type: String,
     //required: [true, 'Project type is required']
   },
   message: {
     type: String,
-    //required: [true, 'Message is required']
+    required: [true, 'Message is required']
   },
   newsletter: {
     type: Boolean,
