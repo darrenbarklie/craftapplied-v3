@@ -14,16 +14,12 @@ mongoose.connect('mongodb://localhost/craftapplied', {
 })﻿
 mongoose.Promise = global.Promise
 
-
 // Middleware : Body Parser
 app.use(bodyParser.json())
-
-
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // TEST : Middleware : Validator
 app.use(expressValidator())
-
-
 
 // Middleware : Initialize routes
 app.use('/api', require('./src/routes/api'))

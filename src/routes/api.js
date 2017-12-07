@@ -13,7 +13,7 @@ router.get('/contact', function(req, res, next){
 // POST : ContactMessage to db
 router.post('/contact', function(req, res, next){
 
-  req.checkBody('name', 'Invalid name').notEmpty();
+  //req.checkBody('name', 'Invalid name').notEmpty();
   //req.checkBody('name', 'Invalid name').isAlpha();
   //req.checkBody('age', 'Invalid age').notEmpty().isInt();
 

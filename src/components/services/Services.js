@@ -117,7 +117,7 @@ export class Services extends Component {
 
                 <Col xs={12} sm={6} lg={3}>
                   <ul>
-                    <li>Information Architecture</li>
+                    <li><span>Information Architecture</span></li>
                     <li>Experience Map</li>
                     <li>Wireframe</li>
                     <li>Storyboard</li>

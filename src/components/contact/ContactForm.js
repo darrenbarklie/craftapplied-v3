@@ -12,11 +12,8 @@ export class ContactForm extends Component {
   render() {
     return (
 
-
-
-
-      // Simple non-React Form form
-      <form action="api/contact" method="post">
+      // WORKS : Simple non-React Form form
+      <form action="api/contact" method="POST">
 
         <input id="name" type="text" field="name" name="name" />
 
