@@ -13,27 +13,43 @@ export class ContactForm extends Component {
     return (
 
       // WORKS : Simple non-React Form form
-      <form action="api/contact" method="POST">
-
-        <input id="name" type="text" field="name" name="name" />
-
-        <button type="submit">Submit</button>
-
-      </form>
+      // <form action="api/contact" method="POST">
+      //
+      //   <input id="name" type="text" field="name" name="name" />
+      //
+      //   <button type="submit">Submit</button>
+      //
+      // </form>
 
 
       // Simple React-Form sample
-      // <Form onSubmit={submittedValues => this.setState( { submittedValues } )}>
-      //   { formApi => (
-      //     <form onSubmit={formApi.submitForm}>
-      //
-      //       <Text field="name" id="name" />
-      //
-      //       <button type="submit">Submit</button>
-      //
-      //     </form>
-      //   )}
-      // </Form>
+      <Form onSubmit={submittedValues => this.setState( { submittedValues } )}>
+        { formApi => (
+          <form action="api/contact" method="POST">
+
+            <label htmlFor="name">Name</label>
+            <Text name="name" field="name" id="name" />
+
+            <label htmlFor="email">Email</label>
+            <Text name="email" field="email" id="email" />
+
+
+
+
+            {/* <label htmlFor="name">Name</label>
+            <Text name="name" field="name" id="name" />
+
+            <label htmlFor="email">Email</label>
+            <Text name="email" field="email" id="email" /> */}
+
+
+
+
+            <button type="submit">Submit</button>
+
+          </form>
+        )}
+      </Form>
 
 
 
