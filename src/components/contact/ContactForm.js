@@ -35,7 +35,7 @@ export class ContactForm extends Component {
                         id="web-design"
                         className="radio-project" />
                       <label htmlFor="web-design">Web Design</label>
-                      <div class="check"><div class="inside"></div></div>
+                      <div className="check"><div className="inside"></div></div>
                     </li>
                     
                     <li>
@@ -44,7 +44,7 @@ export class ContactForm extends Component {
                         id="app-design"
                         className="radio-project" />
                       <label htmlFor="app-design">App Design</label>
-                      <div class="check"><div class="inside"></div></div>
+                      <div className="check"><div className="inside"></div></div>
                     </li>
                     
                     <li>
@@ -53,7 +53,7 @@ export class ContactForm extends Component {
                         id="other"
                         className="radio-project" />
                       <label htmlFor="other">Other</label>
-                      <div class="check"><div class="inside"></div></div>
+                      <div className="check"><div className="inside"></div></div>
                     </li>                  
                   </ul>
                   
