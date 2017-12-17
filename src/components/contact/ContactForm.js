@@ -56,15 +56,6 @@ export class ContactForm extends Component {
                       <div className="check"><div className="inside"></div></div>
                     </li>                  
                   </ul>
-                  
-                  
-
-                  
-
-                  
-
-                  
-
                 </div>
               )}
             </RadioGroup>
@@ -72,9 +63,19 @@ export class ContactForm extends Component {
             <label htmlFor="message">How can we help you?</label>
             <TextArea name="message" field="message" id="message" />
 
-            <Checkbox name="newsletter" field="newsletter" id="newsletter" className="newsletter" />
-            <label htmlFor="newsletter" className="newsletter">Interested in our quarterly newsletter?</label>
-
+            <div className="contact-newsletter-signup">
+              
+              {/* BUG :: Checkbox is not clickable */}
+              
+              <Checkbox name="newsletter" field="newsletter" id="newsletter" className="newsletter-contact" />
+              
+              <label htmlFor="newsletter-contact">
+              Signup to our quarterly newsletter?  No spam, promise!</label>
+              
+              <span className="checkmark"></span>
+              
+            </div>
+            
             <button type="submit">Submit Message</button>
 
           </form>

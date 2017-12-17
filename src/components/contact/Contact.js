@@ -8,11 +8,9 @@ export class Contact extends Component {
     return (
       <div className="page contact">
         <Row>
-          <Col lg={8} md={8} sm={10} xs={12}>
+          <Col lg={6} md={8} sm={10} xs={12}>
             <ContactIntro />
-          </Col>
-
-          <Col lg={8} md={8} sm={10} xs={12}>
+  
             <ContactForm />
           </Col>
 

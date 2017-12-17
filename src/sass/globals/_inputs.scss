@@ -41,22 +41,26 @@ form {
     line-height: 1.5;
   }
   button[type="submit"] {
-    height: 3rem;
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem 1rem;
     margin: 0.5em 0;
     color: $spring-green;
     background-color: $white;
     border: 2px solid $spring-green;
     font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: 1px;
-    transition: all 0.33s linear;
+    transition: all 0.22s linear;
     &:hover, &:focus {
       cursor: pointer;
       color: $primary-green-3;
       border: 2px solid $primary-green-3;
-      transition: all 0.15s linear;
+      transition: all 0.11s linear;
+      outline: none;
+    }
+    &:active {
+      color: $primary-green-4;
+      border: 2px solid $primary-green-4;
+      transition: all 0.11s linear;
       outline: none;
     }
   }
