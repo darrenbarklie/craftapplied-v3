@@ -14,7 +14,7 @@ export class ContactForm extends Component {
 
       <Form onSubmit={submittedValues => this.setState( { submittedValues } )}>
         { formApi => (
-          <form action="api/contact" method="POST">
+          <form action="api/contact" method="POST" className="contact-form">
 
             <label htmlFor="name">Name</label>
             <Text name="name" field="name" id="name" />
@@ -22,27 +22,48 @@ export class ContactForm extends Component {
             <label htmlFor="email">Email</label>
             <Text name="email" field="email" id="email" />
 
-            <RadioGroup field="gender">
+            <RadioGroup field="project">
               { group => (
                 <div name="projectType" className="project-type">
+                  
+                  <p>What is your project?</p>
+                  
+                  <ul>
+                    <li>
+                      <Radio group={group}
+                        value="Web Design"
+                        id="web-design"
+                        className="radio-project" />
+                      <label htmlFor="web-design">Web Design</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    
+                    <li>
+                      <Radio group={group}
+                        value="App Design"
+                        id="app-design"
+                        className="radio-project" />
+                      <label htmlFor="app-design">App Design</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>
+                    
+                    <li>
+                      <Radio group={group}
+                        value="Other"
+                        id="other"
+                        className="radio-project" />
+                      <label htmlFor="other">Other</label>
+                      <div class="check"><div class="inside"></div></div>
+                    </li>                  
+                  </ul>
+                  
+                  
 
-                  <Radio group={group}
-                    value="Web Design"
-                    id="web-design"
-                    className="radio-project" />
-                  <label htmlFor="web-design">Web Design</label>
+                  
 
-                  <Radio group={group}
-                    value="App Design"
-                    id="app-design"
-                    className="radio-project" />
-                  <label htmlFor="app-design">App Design</label>
+                  
 
-                  <Radio group={group}
-                    value="Other"
-                    id="other"
-                    className="radio-project" />
-                  <label htmlFor="other">Other</label>
+                  
 
                 </div>
               )}
