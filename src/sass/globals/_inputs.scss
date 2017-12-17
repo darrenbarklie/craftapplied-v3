@@ -1,0 +1,66 @@
+form {
+  label {
+    display: block;
+    padding: 1em 0 0.15em;
+    color: $grey-5;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  input,
+  select,
+  textarea {
+    width: 100%;
+    color: $grey-2;
+    background-color: $white;
+    border: 2px solid $white-4;
+    font-size: 1em;
+    padding: 0.5em;
+    transition: border 0.33s ease-out;
+    &:hover {
+      border: 2px solid $grey-2;
+      transition: border 0.22s linear;
+    }
+    &:focus {
+      border: 2px solid $primary-green-2;
+      box-shadow: none;
+      outline: none;
+      transition: border 0.11s linear;
+    }
+    &:active {
+      border: 2px solid $spring-green;
+      transition: border 0.11s linear;
+    }
+  }  
+  select option {
+    padding: 0.5em 1em;
+    color: $black;
+  }
+  textarea {
+    padding: 0.25em 0.5em;
+    font-size: 1.25em;
+    line-height: 1.5;
+  }
+  input[type="button"] {
+    height: 3em;
+    margin: 0.5em 0;
+    color: $white;
+    background-color: $spring-green;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    &:hover, &:focus {
+      cursor: pointer;
+      background-color: $primary-green-3;
+      transition: all 0.33s linear;
+    }
+  }
+}
+
+/*
+input,
+select,
+textarea,
+input[type="checkbox"],
+input[type="radio"],
+*/

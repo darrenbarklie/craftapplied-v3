@@ -3,6 +3,9 @@
     h1 {
       @include sr-only;
     }
+    h2 {
+      color: $spring-green;
+    }
   }
 }
 
