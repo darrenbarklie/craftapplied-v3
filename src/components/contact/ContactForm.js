@@ -76,7 +76,7 @@ export class ContactForm extends Component {
               
             </div>
             
-            <button type="submit">Submit Message</button>
+            <button type="submit" className="cta">Submit Message</button>
 
           </form>
         )}

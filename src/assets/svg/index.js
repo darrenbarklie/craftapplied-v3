@@ -1,0 +1,5 @@
+export const IconFacebook = require('./icon-facebook.svg')
+export const IconTwitter = require('./icon-twitter.svg')
+export const IconLinkedIn = require('./icon-linkedin.svg')
+export const IconInstagram = require('./icon-instagram.svg')
+export const IconCodePen = require('./icon-codepen.svg')
