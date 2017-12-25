@@ -2,14 +2,12 @@ import React from 'react'
 import { Link, Route } from 'react-router-dom'
 import { Row, Col } from 'react-flexbox-grid'
 
-import { Work } from './work/Work'
-
-//
-
-//import { WorkObject } from '.'
-//import { EuropcarImg1x, EnergeiaImg1x, GlobalPRImg1x, JLBImg1x } from '../../assets/img/works'
-
-
+import { Antelle,
+         EnergeiaWorks,
+         Europcar,
+         FutureTech,
+         JamesLeBosquet,
+         Maccop } from './work'
 
 
 export const Works = ({ match }) => (
@@ -18,21 +16,12 @@ export const Works = ({ match }) => (
       
       <nav className="secondary">
         <ul>
-          <li>
-            <Link to={`${match.url}/antelle`}>
-              Antelle
-            </Link>
-          </li>
-          <li>
-            <Link to={`${match.url}/energeiaworks`}>
-              EnergeiaWorks
-            </Link>
-          </li>
-          <li>
-            <Link to={`${match.url}/europcar`}>
-              Europcar
-            </Link>
-          </li>
+          <li><Link to={`${match.url}/antelle`}>Antelle</Link></li>
+          <li><Link to={`${match.url}/energeiaworks`}>EnergeiaWorks</Link></li>  
+          <li><Link to={`${match.url}/europcar`}>Europcar</Link></li>    
+          <li><Link to={`${match.url}/futuretech`}>Future Tech</Link></li>        
+          <li><Link to={`${match.url}/jameslebosquet`}>James LeBosquet</Link></li>  
+          <li><Link to={`${match.url}/maccop`}>MACCOP</Link></li>
         </ul>
       </nav>
       
@@ -40,10 +29,16 @@ export const Works = ({ match }) => (
     
     <Col xs={12} md={9} style={{backgroundColor: '#ccc'}}>
       
-      <Route path={`${match.url}/:worksId`} component={Work}/>
       <Route exact path={match.url} render={() => (
         <h3>Please select a project.</h3>
       )}/>
+      
+      <Route path={`${match.url}/antelle`} component={Antelle} />
+      <Route path={`${match.url}/energeiaworks`} component={EnergeiaWorks} />
+      <Route path={`${match.url}/europcar`} component={Europcar} />
+      <Route path={`${match.url}/futuretech`} component={FutureTech} />
+      <Route path={`${match.url}/jameslebosquet`} component={JamesLeBosquet} />
+      <Route path={`${match.url}/maccop`} component={Maccop} />
       
     </Col>
 
