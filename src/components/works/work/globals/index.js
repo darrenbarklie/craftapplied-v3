@@ -1,2 +1,5 @@
 export { Title } from './Title'
+export { Subtitle } from './Subtitle'
 export { Introduction } from './Introduction'
+export { TextBlock } from './TextBlock'
+export { Image } from './Image'
