@@ -27,7 +27,7 @@ export const Works = ({ match }) => (
       
     </Col>
     
-    <Col xs={12} md={9} style={{backgroundColor: '#ccc'}}>
+    <Col xs={12} md={9}>
       
       <Route exact path={match.url} render={() => (
         <h3>Please select a project.</h3>
