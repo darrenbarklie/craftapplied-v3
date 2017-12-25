@@ -98,7 +98,7 @@
     display: block;
     position: relative;
     margin: 0.25rem auto 1.5rem;
-    background: rgba($spring-green, 0.05);
+    background: rgba($spring-green, 0.1);
     padding-right: 1.5rem;
     input[type="checkbox"] {
       position: absolute;
@@ -136,7 +136,6 @@
 }
 
 .contact-info {
-  //padding-right: 2rem;
   h3 {
     margin: 0 0 1rem;
     color: $spring-green;

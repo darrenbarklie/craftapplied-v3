@@ -14,7 +14,7 @@ export class Contact extends Component {
             <ContactForm />
           </Col>
 
-          <Col lg={4} lgOffset={2} md={4} mdOffset={1} sm={12} xs={11}>
+          <Col lg={4} lgOffset={2} md={4} sm={12} xs={11}>
             <ContactInfo />
           </Col>
         </Row>
