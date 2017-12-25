@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Route } from 'react-router-dom'
+import { NavLink, Route } from 'react-router-dom'
 import { Row, Col } from 'react-flexbox-grid'
 
 import { Antelle,
@@ -15,13 +15,33 @@ export const Works = ({ match }) => (
     <Col xs={12} md={3}>
       
       <nav className="secondary">
+        <h2 className="subheader-text">Projects:</h2>
         <ul>
-          <li><Link to={`${match.url}/antelle`}>Antelle</Link></li>
-          <li><Link to={`${match.url}/energeiaworks`}>EnergeiaWorks</Link></li>  
-          <li><Link to={`${match.url}/europcar`}>Europcar</Link></li>    
-          <li><Link to={`${match.url}/futuretech`}>Future Tech</Link></li>        
-          <li><Link to={`${match.url}/jameslebosquet`}>James LeBosquet</Link></li>  
-          <li><Link to={`${match.url}/maccop`}>MACCOP</Link></li>
+          
+          <li><NavLink activeClassName="active"
+            to={`${match.url}/antelle`}>
+            Antelle Website</NavLink></li>
+            
+          <li><NavLink activeClassName="active"
+            to={`${match.url}/energeiaworks`}>
+            EnergeiaWorks Marketing</NavLink></li>
+            
+          <li><NavLink activeClassName="active"
+            to={`${match.url}/europcar`}>
+            Europcar Kiosk App</NavLink></li>
+             
+          <li><NavLink activeClassName="active"
+            to={`${match.url}/futuretech`}>
+            Future Tech Website</NavLink></li>
+                   
+          <li><NavLink activeClassName="active"
+            to={`${match.url}/jameslebosquet`}>
+            James LeBosquet</NavLink></li>
+            
+          <li><NavLink activeClassName="active"
+            to={`${match.url}/maccop`}>
+            MACCOP</NavLink></li>
+            
         </ul>
       </nav>
       
@@ -29,6 +49,8 @@ export const Works = ({ match }) => (
     
     <Col xs={12} md={9}>
       
+      
+      {/* TODO : Add the dashboard component */}
       <Route exact path={match.url} render={() => (
         <h3>Please select a project.</h3>
       )}/>
@@ -58,7 +80,7 @@ export const Works = ({ match }) => (
 //   return (
 // 
 // 
-//     <Link to="antelle">Antelle</Link>
+//     <NavLink to="antelle">Antelle</NavLink>
 // 
     // <Route path="/antelle" component={Antelle} />
     
@@ -76,7 +98,7 @@ export const Works = ({ match }) => (
     //       <WorkObject
     //         title="Europcar Station Native App"
     //         type="UI/UX Design"
-    //         linkTo="/europcar"
+    //         NavLinkTo="/europcar"
     //         ratio="2/3"
     //         style={{
     //           color: '#202124',
@@ -89,7 +111,7 @@ export const Works = ({ match }) => (
     //       <WorkObject
     //         title="EnergeiaWorks Website"
     //         type="Web Design & Development"
-    //         linkTo="/energeiaworks"
+    //         NavLinkTo="/energeiaworks"
     //         ratio="4/3"
     //         style={{
     //           color: '#202124',
@@ -100,7 +122,7 @@ export const Works = ({ match }) => (
     //         <WorkObject
     //           title="Global PR Network Website"
     //           type="Web Design & Development"
-    //           linkTo="/globalprnetwork"
+    //           NavLinkTo="/globalprnetwork"
     //           ratio="4/3"
     //           style={{
     //             color: '#ffffff',
@@ -113,7 +135,7 @@ export const Works = ({ match }) => (
     //       <WorkObject
     //         title="James LeBosquet Hairstyling Web App"
     //         type="Web App Design & Development"
-    //         linkTo="/jameslebosquet"
+    //         NavLinkTo="/jameslebosquet"
     //         ratio="3/1"
     //         style={{
     //           color: '#202124',

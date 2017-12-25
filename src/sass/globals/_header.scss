@@ -11,27 +11,3 @@ header.main {
     height: 8rem;
   }
 }
-// Element : NAV PRIMARY
-nav.primary {
-  height: 100%;
-  ul {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    li {
-      display: flex;
-      height: 100%;
-      align-items: center;
-      &::before {
-        display: none;
-      }
-      a {
-        padding: 1rem 1.5rem;
-        &.active {
-          color: $black;
-        }
-      }
-    }
-  }
-}

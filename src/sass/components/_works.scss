@@ -1,8 +1,8 @@
 .works.page {
   h3 {
     font-family: 'NeuzeitOffice-Bold', system;
-    font-size: 3rem;
-    color: $spring-green;
+    // font-size: 3rem;
+    // color: $spring-green;
   }
 }
 
@@ -109,3 +109,42 @@
     }
   }
 }
+
+
+// PAGE : Work Project 
+.project {
+  h2 {
+    color: $spring-green;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    color: $spring-green;
+    text-transform: uppercase;
+    margin: 5rem 0 1.5rem 0;
+  }
+  .introduction {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  p {
+    font-size: 2rem;
+  }
+  .img-wrapper {
+    position: relative;
+    margin-bottom: 3rem;
+    .caption {
+      position: absolute;
+      left: 0;
+      bottom: 0.45rem;
+      left: 0;
+      padding: 0.5rem 1rem 0.66rem;    
+      background-color: $black;
+      color: $white;
+      font-family: 'NeuzeitOffice-Bold', system;
+    }
+  }
+}
+
+
+
+
