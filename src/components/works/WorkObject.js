@@ -46,7 +46,7 @@ class WorkObject extends Component {
 
     return (
       <div className="work-object"
-        ref={ (divElement) => this.divElement = divElement}>
+        ref={(divElement) => this.divElement = divElement}>
 
           <Link to={this.props.linkTo}>
 

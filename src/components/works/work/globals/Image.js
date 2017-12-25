@@ -1,10 +1,15 @@
 import React from 'react'
+import AspectRatio from 'react-aspect-ratio'
 
-{/*  TODO : Add aspect ratio plugin and props */}
 
 export const Image = (props) => (
-  <div className="img-wrapper">
-    <img src={props.imgSrc} alt={props.imgAlt} style={{maxWidth: '100%', height: 'auto'}} />
+  <AspectRatio className="img-container"
+    style={{
+      backgroundImage: `url(${props.imgSrc})`}}
+    ratio={props.ratio}>
+    
+    <p>{props.imgAlt}</p>
+  
     <div className="caption">{props.caption}</div>
-  </div>
+  </AspectRatio>
 )

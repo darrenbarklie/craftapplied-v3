@@ -127,24 +127,29 @@
     line-height: 1.5;
   }
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
-  .img-wrapper {
-    position: relative;
-    margin-bottom: 3rem;
+  
+  .img-container {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto 2.5rem;
+    box-shadow: 0 4px 8px 0 rgba(32, 33, 36, 0.24);
     .caption {
-      position: absolute;
-      left: 0;
-      bottom: 0.45rem;
-      left: 0;
-      padding: 0.5rem 1rem 0.66rem;    
-      background-color: $black;
-      color: $white;
+      display: inline-block;
+      padding: 0.5rem 1.2rem 0.66rem 1rem;
       font-family: 'NeuzeitOffice-Bold', system;
+      line-height: 1.1;
+      background: $black;
+      color: $white;
     }
+    // Screen-reader alt text
+    p {
+      @include sr-only;
+    }  
   }
 }
-
-
-
-
