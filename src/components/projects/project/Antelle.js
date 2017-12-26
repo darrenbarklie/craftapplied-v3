@@ -70,7 +70,7 @@ export const Antelle = () => (
       text="The Result" />
       
     <TextBlock
-      text="Our finalized v1.0 code was hosted on GitHub, allowing Antelle's own team of developers to integrate into their chosen content management system: Umbraco. Continued support and testing was offered to ensure the final product was as impressive as possible." />
+      text="Our finalized v1.0 code was hosted on GitHub, allowing Antelle's own team of developers to integrate into their chosen content management system: Umbraco. Continued support and testing was offered to ensure the final result was as impressive as possible." />
       
     <Subtitle
       text="Client Testimonial Needs to Go Here!" />

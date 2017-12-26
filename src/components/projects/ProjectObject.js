@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import AspectRatio from 'react-aspect-ratio'
 
-import { WorkObjectCover } from './WorkObjectCover'
+import { ProjectObjectCover } from './ProjectObjectCover'
 
-class WorkObject extends Component {
+class ProjectObject extends Component {
   constructor(props) {
     super(props)
 
@@ -45,7 +45,7 @@ class WorkObject extends Component {
     )
 
     return (
-      <div className="work-object"
+      <div className="project-object"
         ref={(divElement) => this.divElement = divElement}>
 
           <Link to={this.props.linkTo}>
@@ -54,7 +54,7 @@ class WorkObject extends Component {
               ratio={this.props.ratio}
               style={objectStyles}>
 
-              <WorkObjectCover
+              <ProjectObjectCover
                 width={this.state.width}
                 height={this.state.height}>
 
@@ -63,7 +63,7 @@ class WorkObject extends Component {
                   <span>{this.props.type}</span>
                 </div>
 
-              </WorkObjectCover>
+              </ProjectObjectCover>
 
             </AspectRatio>
 
@@ -72,4 +72,4 @@ class WorkObject extends Component {
     )
   }
 }
-export default WorkObject
+export default ProjectObject

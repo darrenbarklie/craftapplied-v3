@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export const WorkObjectCover = (props) => {
+export const ProjectObjectCover = (props) => {
   let coverLeftStyle = {
     borderWidth: `${props.height}px 0 0 ${props.width}px`,
   }
@@ -9,7 +9,7 @@ export const WorkObjectCover = (props) => {
   }
 
   return (
-    <div className="work-object-cover">
+    <div className="project-object-cover">
 
       {props.children}
 

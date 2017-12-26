@@ -1,12 +1,10 @@
-.works.page {
+.projects.page {
   h3 {
     font-family: 'NeuzeitOffice-Bold', system;
-    // font-size: 3rem;
-    // color: $spring-green;
   }
 }
 
-#works {
+#projects {
   width: 101%;
   > div {
     padding: 0;
@@ -15,7 +13,7 @@
       padding-right: 8px;
     }
   }
-  .work-object {
+  .project-object {
     width: 100%;
     display: inline-block;
     position: relative;
@@ -36,17 +34,17 @@
   }
   // NOTE : 4px artifact below --aspect-ratio function,
   //        unavoidable magic numbers...
-  > div:nth-child(3) .work-object:nth-child(2) {
+  > div:nth-child(3) .project-object:nth-child(2) {
     top: -31px;
     border-top: 16px solid $white;
   }
-  > div:nth-child(4) .work-object {
+  > div:nth-child(4) .project-object {
     margin-top: -38px;
   }
 }
 
 // Animated cover
-.work-object {
+.project-object {
   overflow: hidden;
   > a {
     .cover-triangle-left {
@@ -111,7 +109,7 @@
 }
 
 
-// PAGE : Work Project 
+// PAGE : Projects 
 .project {
   h2 {
     color: $spring-green;

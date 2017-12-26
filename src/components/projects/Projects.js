@@ -7,11 +7,11 @@ import { Antelle,
          Europcar,
          FutureTech,
          JamesLeBosquet,
-         Maccop } from './work'
+         Maccop } from './project'
 
 
-export const Works = ({ match }) => (
-  <Row className="page works">
+export const Projects = ({ match }) => (
+  <Row className="page projects">
     <Col xs={12} md={3}>
       
       <nav className="secondary">

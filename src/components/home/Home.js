@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Row } from 'react-flexbox-grid'
 
-import { Splash, Works } from '.'
+import { Splash, Projects } from '.'
 
 
 export class Home extends Component {
@@ -11,7 +11,7 @@ export class Home extends Component {
 
         <Splash />
 
-        <Works />
+        <Projects />
 
       </Row>
     )
