@@ -13,7 +13,7 @@ export const Europcar = () => (
       text="We were invited to complete a full design phase for an exclusive tablet app for Europcar. Our client wanted to provide an opportunity for customers idling in airport baggage halls to browse, check-in, and reserve Europcar hire vehicles." />
     
     <Subtitle
-      text="Brief Studying" />
+      text="Brief Analysis" />
     
     <Image
       imgSrc="https://static.pexels.com/photos/20787/pexels-photo.jpg"
@@ -52,7 +52,7 @@ export const Europcar = () => (
       text="Wireframing Process" />
       
     <TextBlock
-      text="Having identified the expectations of the system at each stage, we began to visualize how our solution might look, with placement of User Input elements and early storyboarding of User Experience." />
+      text="Having identified the expectations of the system at each stage, we began to visualize how our solution might look, with placement of user input elements and early storyboarding of user experience." />
       
     <TextBlock
       text="This process results in a ‘first-look’ at the software for both clients and developers; a process that is repeated and refined a number of times." />
