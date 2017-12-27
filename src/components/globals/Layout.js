@@ -6,50 +6,42 @@ import { ErrorBoundary, Header } from '.'
 import { Home, Services, Projects, Contact } from '.'
 
 
-
-
-// 
-// function calcHeaderHeight() {
-//   const headerHeight = document.querySelector('header.main').clientHeight;
-// 
-//   console.log(headerHeight);
-// }
-
-
-
 export class Layout extends Component {
   constructor(props) {
     super(props)
     
     this.state = {
-      dynamicHeight: 0
+      headerHeight: 0,
+      dynamicPaddingTop: 0
     }
     
-    this.setHeight = this.setHeight.bind(this)
+    this.setPaddingHeight = this.setPaddingHeight.bind(this)
   }
   
-  setHeight() {
-    let dynamicHeight = document.querySelector('header.main').clientHeight;
+  setPaddingHeight() {
+    let headerHeight = document.querySelector('header.main').clientHeight;
+    this.setState({ headerHeight })
     
-    
-  
-    this.setState({ dynamicHeight })
-    
-  
-  //  console.log(headerHeight);
+    let dynamicPaddingTop = headerHeight + 48
+    this.setState({ dynamicPaddingTop })
   }
   
   componentDidMount() {
-    this.setHeight();
+    this.setPaddingHeight()
+    window.addEventListener('resize', this.setPaddingHeight)
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.setPaddingHeight);
   }
 
   render() {
     return (
       <div id="layout">
   
-        <Header />
+        <Header height={this.state.headerHeight} />
   
-        <Grid fluid className="grid-container stage" style={{paddingTop: this.state.dynamicHeight}}>
+        <Grid fluid className="grid-container stage" style={{paddingTop: this.state.dynamicPaddingTop}}>
           <Switch>
   
             <Route exact path="/" component={Home} />
@@ -67,6 +59,8 @@ export class Layout extends Component {
             <Route render={() => <h1>404</h1>} />
   
           </Switch>
+          
+          <h1>HeaderHeight: {this.state.headerHeight}</h1>
         </Grid>
   
       </div>

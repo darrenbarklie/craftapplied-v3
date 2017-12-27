@@ -19,6 +19,8 @@ export const Header = (props) => {
   
         <div className="nav-primary">
           
+          Header height: {props.height}
+          
           <Navigation />
           
           {/* <button>Navigation</button> */}
