@@ -5,14 +5,11 @@ import { Brand, Navigation } from '.'
 
 
 
-
 export const Header = (props) => {
   return (
     <header className="main">
       
       <div className="header-container">
-        
-        
         
         <div className="brand">
           <NavLink exact activeClassName="active" to="/">
@@ -27,15 +24,7 @@ export const Header = (props) => {
           {/* <button>Navigation</button> */}
   
         </div> 
-        
-        
-        
-        
-        
-        
       </div>
-
- 
     </header>
   )
 }

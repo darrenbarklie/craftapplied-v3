@@ -12,7 +12,6 @@ export const Navigation = () => {
         <li><NavLink activeClassName="active" to="/contact">Contact</NavLink></li>
         <li><NavLink activeClassName="active" to="/contact">Contact</NavLink></li>
         <li><NavLink activeClassName="active" to="/contact">Contact</NavLink></li>
-        
       </ul>
     </nav>
   )

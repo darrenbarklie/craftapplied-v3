@@ -1,13 +1,12 @@
 // Element : HEADER MAIN
 header.main {
-  //max-width: 1440px;
-  margin: 0 auto;
+  position: fixed;
+  width: 100%;
   padding: 1rem 0;
+  z-index: 10;
   background: red;
-
   
   .header-container {
-    background: blue;
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
