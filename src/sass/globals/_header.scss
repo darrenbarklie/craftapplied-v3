@@ -1,13 +1,31 @@
 // Element : HEADER MAIN
 header.main {
-  padding: 2rem 0;
-  background-color: white;
-  .row {
+  //max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background: red;
+
+  
+  .header-container {
+    background: blue;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
   }
+  
+
   .brand {
     display: block;
     width: 8rem;
     height: 8rem;
   }
+  
+  
 }
