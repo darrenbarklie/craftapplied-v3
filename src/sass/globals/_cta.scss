@@ -6,6 +6,7 @@ button[type="submit"].cta {
   color: $spring-green;
   background-color: transparent;
   font-size: 1.333rem;
+  text-align: center;
   border: 1px solid $spring-green;
   transition: color 0.33s linear,
               border 1.5s ease-out;

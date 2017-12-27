@@ -22,7 +22,7 @@ export class Layout extends Component {
     let headerHeight = document.querySelector('header.main').clientHeight;
     this.setState({ headerHeight })
     
-    let dynamicPaddingTop = headerHeight + 48
+    let dynamicPaddingTop = headerHeight + 32
     this.setState({ dynamicPaddingTop })
   }
   
@@ -39,7 +39,7 @@ export class Layout extends Component {
     return (
       <div id="layout">
   
-        <Header height={this.state.headerHeight} />
+        <Header headerHeight={this.state.headerHeight} />
   
         <Grid fluid className="grid-container stage" style={{paddingTop: this.state.dynamicPaddingTop}}>
           <Switch>
@@ -60,7 +60,6 @@ export class Layout extends Component {
   
           </Switch>
           
-          <h1>HeaderHeight: {this.state.headerHeight}</h1>
         </Grid>
   
       </div>

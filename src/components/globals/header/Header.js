@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom'
 import { Brand, Navigation } from '.'
 
 
-
 export const Header = (props) => {
   return (
     <header className="main">
@@ -13,17 +12,19 @@ export const Header = (props) => {
         
         <div className="brand">
           <NavLink exact activeClassName="active" to="/">
+          
             <Brand />
+          
           </NavLink>
         </div>
   
         <div className="nav-primary">
           
-          Header height: {props.height}
-          
           <Navigation />
           
-          {/* <button>Navigation</button> */}
+          <button id="nav-open" className="cta">
+            Navigation Menu
+          </button>
   
         </div> 
       </div>
