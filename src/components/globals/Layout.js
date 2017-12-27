@@ -11,35 +11,44 @@ export class Layout extends Component {
     super(props)
     
     this.state = {
+      windowWidth: 0,
       headerHeight: 0,
       dynamicPaddingTop: 0
     }
-    
-    this.setPaddingHeight = this.setPaddingHeight.bind(this)
+
+    this.setDynamicSizes = this.setDynamicSizes.bind(this)
   }
   
-  setPaddingHeight() {
+  setDynamicSizes() {
+    // Get viewport width
+    let windowWidth = window.innerWidth
+    this.setState({ windowWidth })
+    
+    // Get header height
     let headerHeight = document.querySelector('header.main').clientHeight;
     this.setState({ headerHeight })
     
+    // Add padding to headerHeight
     let dynamicPaddingTop = headerHeight + 32
     this.setState({ dynamicPaddingTop })
   }
   
   componentDidMount() {
-    this.setPaddingHeight()
-    window.addEventListener('resize', this.setPaddingHeight)
+    this.setDynamicSizes()
+    window.addEventListener('resize', this.setDynamicSizes)
   }
   
   componentWillUnmount() {
-    window.removeEventListener("resize", this.setPaddingHeight);
+    window.removeEventListener("resize", this.setDynamicSizes);
   }
 
   render() {
     return (
       <div id="layout">
   
-        <Header headerHeight={this.state.headerHeight} />
+        <Header
+          windowWidth={this.state.windowWidth}
+          headerHeight={this.state.headerHeight} />
   
         <Grid fluid className="grid-container stage" style={{paddingTop: this.state.dynamicPaddingTop}}>
           <Switch>

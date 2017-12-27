@@ -5,28 +5,18 @@ import { Brand, Navigation } from '.'
 
 
 export const Header = (props) => {
+
   return (
     <header className="main">
-      
+  
       <div className="header-container">
-        
-        <div className="brand">
-          <NavLink exact activeClassName="active" to="/">
-          
-            <Brand />
-          
-          </NavLink>
-        </div>
   
-        <div className="nav-primary">
-          
-          <Navigation />
-          
-          <button id="nav-open" className="cta">
-            Navigation Menu
-          </button>
+        <NavLink exact className="brand" activeClassName="active" to="/">
+          <Brand />
+        </NavLink>
+
+        <Navigation windowWidth={ props.windowWidth } isResponsive={ true }/>
   
-        </div> 
       </div>
     </header>
   )
