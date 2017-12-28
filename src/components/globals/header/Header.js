@@ -15,7 +15,9 @@ export const Header = (props) => {
           <Brand />
         </NavLink>
 
-        <Navigation windowWidth={ props.windowWidth } isResponsive={ true }/>
+        {/* TODO : Conditional isResponsive based on windowWidth */}
+
+        <Navigation windowWidth={ props.windowWidth } isResponsive={ true } />
   
       </div>
     </header>
