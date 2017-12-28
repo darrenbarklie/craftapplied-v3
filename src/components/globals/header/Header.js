@@ -5,7 +5,6 @@ import { Brand, Navigation } from '.'
 
 
 export const Header = (props) => {
-
   return (
     <header className="main">
   
@@ -15,9 +14,7 @@ export const Header = (props) => {
           <Brand />
         </NavLink>
 
-        {/* TODO : Conditional isResponsive based on windowWidth */}
-
-        <Navigation windowWidth={ props.windowWidth } isResponsive={ true } />
+        <Navigation windowWidth={props.windowWidth} navResponsive={props.navResponsive} />
   
       </div>
     </header>

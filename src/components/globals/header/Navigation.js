@@ -9,25 +9,17 @@ export class Navigation extends Component {
 
   constructor(props) {
     super(props)
-
-    this.state = { isResponsive: false }
-    this.isResponsive = this.isResponsive.bind(this)
+    this.state = { navResponsive: false}
   }
   
-  isResponsive() {
-    let isResponsive = this.props.isResponsive
-    this.setState({ isResponsive })
+  componentWillReceiveProps(newProps) {
+    this.setState({navResponsive: newProps.navResponsive});
   }
   
-  componentDidMount() {
-    this.isResponsive()
-  }
-
   render() {
-    const isResponsive = this.state.isResponsive
-
     let menu = null;
-    if (isResponsive === true) {
+    
+    if (this.state.navResponsive === true) {
       menu = <NavigationMobile />
     } else {
       menu = <NavigationDesktop />
@@ -41,5 +33,4 @@ export class Navigation extends Component {
       </div>
     );
   }
-
 }

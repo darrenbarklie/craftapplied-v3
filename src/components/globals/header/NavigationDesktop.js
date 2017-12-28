@@ -3,9 +3,6 @@ import { NavLink } from 'react-router-dom'
 
 export const NavigationDesktop = () => (
   <nav className="primary">
-    <button id="nav-close" className="cta">
-      &#x2716;
-    </button>
     <ul>
       <li><NavLink activeClassName="active" to="/about">About</NavLink></li>
       <li><NavLink activeClassName="active" to="/services">Services</NavLink></li>

@@ -12,6 +12,7 @@ export class Layout extends Component {
     
     this.state = {
       windowWidth: 0,
+      navResponsive: false,
       headerHeight: 0,
       dynamicPaddingTop: 0
     }
@@ -24,6 +25,13 @@ export class Layout extends Component {
     let windowWidth = window.innerWidth
     this.setState({ windowWidth })
     
+    // Set state based on viewport width
+    if(windowWidth < 1000) {
+      this.setState({ navResponsive: true })
+    } else {
+      this.setState({ navResponsive: false })
+    }
+
     // Get header height
     let headerHeight = document.querySelector('header.main').clientHeight;
     this.setState({ headerHeight })
@@ -48,6 +56,7 @@ export class Layout extends Component {
   
         <Header
           windowWidth={this.state.windowWidth}
+          navResponsive={this.state.navResponsive}
           headerHeight={this.state.headerHeight} />
   
         <Grid fluid className="grid-container stage" style={{paddingTop: this.state.dynamicPaddingTop}}>
