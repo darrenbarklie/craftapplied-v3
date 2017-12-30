@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Row } from 'react-flexbox-grid'
+import { Row } from 'react-flexbox-grid'
 import { NavLink } from 'react-router-dom'
 import { Brand, Navigation } from '.'
 

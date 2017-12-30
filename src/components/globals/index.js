@@ -2,6 +2,8 @@
 export { Layout } from './Layout'
 export { ErrorBoundary } from './ErrorBoundary'
 export { Header } from './header'
+export { Footer } from './footer'
+export { CtaContact } from './CtaContact'
 
 
 // Pages

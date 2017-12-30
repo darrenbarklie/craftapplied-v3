@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import { Grid } from 'react-flexbox-grid'
 
-import { ErrorBoundary, Header } from '.'
+import { ErrorBoundary, Header, Footer } from '.'
 import { Home, Services, Projects, Contact } from '.'
 
 
@@ -77,6 +77,8 @@ export class Layout extends Component {
             <Route render={() => <h1>404</h1>} />
   
           </Switch>
+          
+          <Footer />
           
         </Grid>
   
