@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import { Grid } from 'react-flexbox-grid'
 
 import { ErrorBoundary, Header, Footer } from '.'
-import { Home, Services, Projects, Contact } from '.'
+import { Home, About, Services, Projects, Contact } from '.'
 
 
 export class Layout extends Component {
@@ -64,13 +64,15 @@ export class Layout extends Component {
   
             <Route exact path="/" component={Home} />
   
-            <Route path="/about" render={() => <h1>About</h1>} />
+            <Route path="/about" component={About} />
   
             <Route path="/services" component={Services} />
   
             <Route path="/projects" component={Projects} />
   
-            <Route path="/blog" render={() => <h1>Blog</h1>} />
+            <Route path="/bytes" render={() => <h1>Bytes</h1>} />
+            
+            {/* <Route path="/blog" render={() => <h1>Blog</h1>} /> */}
   
             <Route path="/contact" component={Contact} />
   
@@ -78,9 +80,9 @@ export class Layout extends Component {
   
           </Switch>
           
-          <Footer />
-          
         </Grid>
+        
+        <Footer />
   
       </div>
     )

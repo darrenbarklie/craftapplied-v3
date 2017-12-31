@@ -8,6 +8,7 @@ export { CtaContact } from './CtaContact'
 
 // Pages
 export { Home } from '../home'
+export { About } from '../about'
 export { Projects } from '../projects'
 export { Services } from '../services'
 export { Contact } from '../contact'

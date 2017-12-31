@@ -13,11 +13,18 @@ body {
     margin-right: 0;
   }
 }
+#layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 .grid-container {
   max-width: 1440px;
   margin: 0 auto;
 }
 .stage {
+  flex: 1;
+  width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
