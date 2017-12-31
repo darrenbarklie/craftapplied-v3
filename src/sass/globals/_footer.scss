@@ -1,15 +1,26 @@
 footer.main {
-  padding: 2rem 0 2rem;
+  padding-bottom: 1rem;
   .row:nth-child(1) {
     font-family: 'NeuzeitOffice-Bold', system;
     padding: 1.5rem 0 1rem;
   }
+  .phone {
+    text-align: center;
+  }
   .social {
+    text-align: right;
     a {
+      display: inline-block;
+      width: 2.5rem;
+      height: 2.5rem;
+      text-align: center;
+      position: relative;
+      left: 0.5rem;
       img {
         width: auto;
         height: 1.5rem;
-        margin-right: 1.5rem;
+        position: relative;
+        top: 0.4rem;
       }
     }
   }

@@ -9,34 +9,30 @@ export const Footer = () => (
   <footer className="main">
     <Grid fluid className="grid-container stage">
       <Row>
-        <Col xs={12} md={4}>
+        <Col xs={12} md={4} className="email">
           <div>Email: hello@craftapplied.com</div>
         </Col>
         
-        <Col xs={12} md={4}>
+        <Col xs={12} md={4} className="phone">
           <div>Phone: +44 (0) 208 123 0264</div>
         </Col>
         
-        <Col xs={12} md={4}>
-          <div className="social">
-            
-            <a href="https://www.facebook.com/craftapplied/" target="_blank" rel="noopener">
-              <img src={IconFooterFacebook} alt="Facebook icon"/>
-            </a>
-            
-            <a href="https://twitter.com/craftapplied" target="_blank" rel="noopener">
-              <img src={IconFooterTwitter} alt="Twitter icon"/>
-            </a>
-            
-            <a href="https://www.linkedin.com/in/darrenbarklie/" target="_blank" rel="noopener">
-              <img src={IconFooterLinkedIn} alt="LinkedIn icon"/>
-            </a>
-            
-            <a href="https://www.instagram.com/craftapplied/" target="_blank" rel="noopener">
-              <img src={IconFooterInstagram} alt="Instagram icon"/>
-            </a>
-
-          </div>
+        <Col xs={12} md={4} className="social">
+          <a href="https://www.facebook.com/craftapplied/" target="_blank" rel="noopener">
+            <img src={IconFooterFacebook} alt="Facebook icon"/>
+          </a>
+          
+          <a href="https://twitter.com/craftapplied" target="_blank" rel="noopener">
+            <img src={IconFooterTwitter} alt="Twitter icon"/>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/darrenbarklie/" target="_blank" rel="noopener">
+            <img src={IconFooterLinkedIn} alt="LinkedIn icon"/>
+          </a>
+          
+          <a href="https://www.instagram.com/craftapplied/" target="_blank" rel="noopener">
+            <img src={IconFooterInstagram} alt="Instagram icon"/>
+          </a>
         </Col>  
       </Row>
       

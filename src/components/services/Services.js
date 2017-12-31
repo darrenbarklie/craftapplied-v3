@@ -56,7 +56,7 @@ export class Services extends Component {
             <Col xs={12} md={8}>
 
               <h2>Development Services</h2>
-              <p>We are fluent with many of the latest modern open-source languages and front-end frameworks.</p>
+              <p>We are fluent with many of the latest modern open-source languages, front-end frameworks, and content manangement systems.</p>
 
               <Row>
                 <Col xs={6}>
@@ -107,7 +107,7 @@ export class Services extends Component {
 
               <Row>
                 <Col xs={12} sm={6} lg={3}>
-                  <ul>
+                  <ul className="list">
                     <li>Websites</li>
                     <li>Native &amp; Web Apps</li>
                     <li>Intranets</li>
@@ -116,7 +116,7 @@ export class Services extends Component {
                 </Col>
 
                 <Col xs={12} sm={6} lg={3}>
-                  <ul>
+                  <ul className="list">
                     <li><span>Information Architecture</span></li>
                     <li>Experience Map</li>
                     <li>Wireframe</li>
@@ -125,7 +125,7 @@ export class Services extends Component {
                 </Col>
 
                 <Col xs={12} sm={6} lg={3}>
-                  <ul>
+                  <ul className="list">
                     <li>UI Design System</li>
                     <li>Custom Icons</li>
                     <li>Graphics &amp; Illustration</li>
@@ -134,7 +134,7 @@ export class Services extends Component {
                 </Col>
 
                 <Col xs={12} sm={6} lg={3}>
-                  <ul>
+                  <ul className="list">
                     <li>Front-end Toolkit</li>
                     <li>Front-end Template</li>
                     <li>Print Design</li>
