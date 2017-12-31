@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 import AspectRatio from 'react-aspect-ratio'
+import MediaQuery from 'react-responsive'
 
 import { DesignImg, DevImg, BuildImg, DesignImgVert, DevImgVert, BuildImgVert  } from '../../assets/img/services'
 
@@ -12,14 +13,15 @@ export class Services extends Component {
         <Col>
 
           <Row id="design-services" className="section">
+
             <Col xs={12} md={4}>
+              <MediaQuery maxWidth={767}>
+                <img src={DesignImgVert} alt="Design illustration" />
+              </MediaQuery>
               
-              
-              {/* <img src={DesignImg} alt="Design illustration" /> */}
-              
-              {/*  TODO: Conditionally render  */}
-              <div style={{backgroundImage: `url(${DesignImgVert})`}}>Something here</div>
-              
+              <MediaQuery minWidth={767}>
+                <img src={DesignImg} alt="Design illustration" />
+              </MediaQuery>              
             </Col>
 
             <Col xs={12} md={8}>
@@ -96,8 +98,14 @@ export class Services extends Component {
               </Row>
             </Col>
 
-            <Col xs={12} md={4}>
-              <img src={DevImg} alt="Development illustration" />
+            <Col xs={12} md={4}>              
+              <MediaQuery maxWidth={767}>
+                <img src={DevImgVert} alt="Development illustration" />
+              </MediaQuery>
+              
+              <MediaQuery minWidth={767}>
+                <img src={DevImg} alt="Development illustration" />
+              </MediaQuery>
             </Col>
           </Row>
 

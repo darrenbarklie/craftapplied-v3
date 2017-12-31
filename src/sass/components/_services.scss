@@ -18,8 +18,8 @@
     max-width: 100%;
     padding: 0 40px;
     margin: 2rem auto;
-    @media (max-width: 767px) {
-      height: 20rem;
+    @media (max-width: 420px) {
+      padding: 0;
     }
   }
   #design-services {
