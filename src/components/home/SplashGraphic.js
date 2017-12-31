@@ -7,12 +7,6 @@ import SplashImg from '../../assets/img/home/graphic-splash.png'
 
 
 export const SplashGraphic = () => {
-
-  function calcViewportHgt() {
-    // TODO : Dynamically calculate section height
-  }
-  calcViewportHgt()
-
   return (
     <div className="splash-graphic">
       <AspectRatio

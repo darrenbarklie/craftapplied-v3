@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'react-flexbox-grid'
+import AspectRatio from 'react-aspect-ratio'
 
-import { DesignImg, DevImg, BuildImg } from '../../assets/img/services'
+import { DesignImg, DevImg, BuildImg, DesignImgVert, DevImgVert, BuildImgVert  } from '../../assets/img/services'
 
 
 export class Services extends Component {
@@ -12,7 +13,13 @@ export class Services extends Component {
 
           <Row id="design-services" className="section">
             <Col xs={12} md={4}>
-              <img src={DesignImg} alt="Design illustration" />
+              
+              
+              {/* <img src={DesignImg} alt="Design illustration" /> */}
+              
+              {/*  TODO: Conditionally render  */}
+              <div style={{backgroundImage: `url(${DesignImgVert})`}}>Something here</div>
+              
             </Col>
 
             <Col xs={12} md={8}>
@@ -101,9 +108,9 @@ export class Services extends Component {
             </Col>
 
             <Col xs={12}>
-
+              
               <h2>What We Build</h2>
-              <p>We produce assets, resources and systems to effeciently evaluate, test and solve business and creative challenges:</p>
+              <p>We produce assets, resources, and systems to effeciently evaluate, test and solve both business and creative challenges:</p>
 
               <Row>
                 <Col xs={12} sm={6} lg={3}>

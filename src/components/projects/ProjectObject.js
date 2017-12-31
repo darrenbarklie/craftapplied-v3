@@ -48,26 +48,26 @@ class ProjectObject extends Component {
       <div className="project-object"
         ref={(divElement) => this.divElement = divElement}>
 
-          <Link to={this.props.linkTo}>
+        <Link to={this.props.linkTo}>
 
-            <AspectRatio
-              ratio={this.props.ratio}
-              style={objectStyles}>
+          <AspectRatio
+            ratio={this.props.ratio}
+            style={objectStyles}>
 
-              <ProjectObjectCover
-                width={this.state.width}
-                height={this.state.height}>
+            <ProjectObjectCover
+              width={this.state.width}
+              height={this.state.height}>
 
-                <div className="label">
-                  <h3>{this.props.title}</h3>
-                  <span>{this.props.type}</span>
-                </div>
+              <div className="label">
+                <h3>{this.props.title}</h3>
+                <span>{this.props.type}</span>
+              </div>
 
-              </ProjectObjectCover>
+            </ProjectObjectCover>
 
-            </AspectRatio>
+          </AspectRatio>
 
-          </Link>
+        </Link>
       </div>
     )
   }

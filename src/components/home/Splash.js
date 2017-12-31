@@ -12,21 +12,17 @@ export const Splash = () => {
       <Col xs={12} sm={4} md={6}>
         <h1>We are a creative agency dedicated to crafting valuable UI/UX solutions.</h1>
         <p>We answer client needs for digital creative services, sharing our expertise and experience in:</p>
-        <ul>
+        <ul className="list">
           <li>UI/UX Design</li>
           <li>Visual Design</li>
           <li>Web &amp; App Development</li>
         </ul>
-        <Link to="/services" className="cta cta-animated">View our full service list</Link>
+        <Link to="/services" className="cta cta-animated">View our full services list</Link>
       </Col>
-
 
       <Col xs={12} sm={8} md={6}>
-
         <SplashGraphic />
-
       </Col>
-
     </Row>
   )
 }
