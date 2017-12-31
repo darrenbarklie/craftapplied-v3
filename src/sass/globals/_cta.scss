@@ -27,14 +27,20 @@ button[type="submit"].cta {
 
 .cta-contact {
   display: block;
-  padding: 3rem 1.5rem;
+  padding: 2rem 3rem 2.5rem;
   font-size: 1.5rem;
   background-color: rgba($light-green, 0.2);
   .cta {
+    display: inline-block;
     padding-left: 3rem;
     padding-right: 3rem;
+    margin: 1.5rem auto 0;
     color: $white;
     background-color: $spring-green;
-    
+    transition: background-color 0.44s ease-out;
+    &:hover {
+      background-color: lighten($spring-green, 5%);
+      transition: background-color 0.33s linear;
+    }
   }
 }
