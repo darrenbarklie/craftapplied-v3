@@ -33,6 +33,7 @@ export class Layout extends Component {
     }
 
     // Get header height
+    // TODO : This should be a callback function(?)
     let headerHeight = document.querySelector('header.main').clientHeight;
     this.setState({ headerHeight })
     

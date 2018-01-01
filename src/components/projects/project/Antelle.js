@@ -10,7 +10,7 @@ export const Antelle = () => (
       text="Antelle Website" />
     
     <Introduction
-      text="We lent our services to Antelle, a software development company that produces software solutions for government and business organisations positioned on the Isle of Man. As a certified Microsoft Gold Partner, we offered to help Antelle bring their homepage and branding up to the gold standard." />
+      text="We lent our services to Antelle, a development company that produces software solutions for government and business organisations positioned on the Isle of Man. As a certified Microsoft Gold Partner, we offered Antelle our expertise to also bring their homepage and branding up to the gold standard." />
     
     <Subtitle
       text="Brief Analysis" />
@@ -23,7 +23,7 @@ export const Antelle = () => (
     />
     
     <TextBlock
-      text="Our work began with a full audit of the exisitng Antelle website.  We identified that existing copy was well written and clearly mapped out the company's services and key information in detail.  The areas most in need of improvement included site structure, organisation of information hierarchy, and the aesthetic presentation of content." />
+      text="Our work began with a full audit of the exisitng Antelle website.  We identified that copy was well written and clearly mapped out the company's services and key information in detail.  The areas most in need of improvement included site structure, organisation of information hierarchy, and the aesthetic presentation of content." />
     
     <Subtitle
       text="UI/UX Design Phase" />
