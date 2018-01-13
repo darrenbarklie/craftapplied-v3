@@ -8,3 +8,5 @@ export const IconFooterFacebook = require('./icon-facebook-simple.svg')
 export const IconFooterTwitter = require('./icon-twitter-simple.svg')
 export const IconFooterLinkedIn = require('./icon-linkedin-simple.svg')
 export const IconFooterInstagram = require('./icon-instagram-simple.svg')
+
+export const IconMenu = require('./icon-menu.svg')

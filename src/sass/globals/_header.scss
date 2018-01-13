@@ -10,30 +10,35 @@ header.main {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    
+  
     .brand {
       display: block;
       width: 8rem;
-      height: auto;
+      height: 8rem;
       margin-right: 2rem;
       @media (max-width: 575px) {
         width: 6rem;
+        height: 6rem;
       }
       @media (max-width: 500px) {
         width: 5rem;
+        height: 5rem;
       } 
     }
+    
     #nav-open {
       display: none;
       border-width: 3px;
+      flex: 1 0 auto;
       @media (max-width: 575px) {
         display: block;
+        flex: 1 0 auto;
       }
       @media (max-width: 360px) {
         padding: 0.5rem 1rem;

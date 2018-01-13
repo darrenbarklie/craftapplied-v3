@@ -71,7 +71,7 @@ export class Layout extends Component {
   
             <Route path="/projects" component={Projects} />
   
-            <Route path="/bytes" render={() => <h1>Bytes</h1>} />
+            {/* <Route path="/bytes" render={() => <h1>Bytes</h1>} /> */}
             
             {/* <Route path="/blog" render={() => <h1>Blog</h1>} /> */}
   

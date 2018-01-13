@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
 
+import { IconMenu } from '../../../assets/svg' 
+
+
 export class NavigationMobile extends Component {
   constructor(props) {
     super(props)
@@ -19,7 +22,10 @@ export class NavigationMobile extends Component {
     return (
       <nav className="primary">
         <button onClick={this.handleClick} className="cta">
-          {this.state.isToggleOn ? 'Open Menu' : 'Close Menu'}
+          {/* {this.state.isToggleOn ? 'Open Menu' : 'Close Menu'} */}
+          {/* <span classNmae="menu-icon"></span> Menu */}
+          <img src={IconMenu} alt="Menu icon"/>
+          Menu
         </button>
         
         <div>

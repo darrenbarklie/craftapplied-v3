@@ -1,5 +1,6 @@
 // Element : NAV PRIMARY
 nav.primary {
+  display: flex;
   ul {
     display: flex;
     flex-direction: row;
@@ -19,8 +20,33 @@ nav.primary {
       }
     }
   }
-
   
+  button.cta {
+    img {
+      display: inline-block;
+      width:  1.5rem;
+      height: 1.5rem;
+      position: relative;
+      top: 0.33rem;
+      margin-right: 0.66rem;
+      transition: opacity 0.44s ease-out;
+      @media (max-width: 350px) {
+        display: none;
+      }
+    }
+    
+    &:hover {
+      img {
+        opacity: 0.66;
+        transition: opacity 0.33s linear;
+      }
+    }
+    @media (max-width: 575px) {
+      font-size: 1.2rem;
+    }
+  }
+
+
   // Element : NAV MOBILE
   .nav-mobile {
     position: fixed;

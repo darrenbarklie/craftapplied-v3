@@ -23,3 +23,6 @@ export const EnergeiaWorks = () => (
       
     <TextBlock
       text="A series of bespoke email templates were designed and developed to promote EnergeiaWorks from a number of angles. Monthly newsletter templates are informative to all of the company's clientbase.  Targeted event promotions are delivered to specific audiences based on proximity." />
+      
+  </section>
+)
