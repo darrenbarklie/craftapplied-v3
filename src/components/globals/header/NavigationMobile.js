@@ -23,7 +23,6 @@ export class NavigationMobile extends Component {
       <nav className="primary">
         <button onClick={this.handleClick} className="cta">
           {/* {this.state.isToggleOn ? 'Open Menu' : 'Close Menu'} */}
-          {/* <span classNmae="menu-icon"></span> Menu */}
           <img src={IconMenu} alt="Menu icon"/>
           Menu
         </button>
@@ -42,8 +41,8 @@ export class NavigationMobile extends Component {
                 <li><NavLink activeClassName="active" to="/about">About</NavLink></li>
                 <li><NavLink activeClassName="active" to="/services">Services</NavLink></li>
                 <li><NavLink activeClassName="active" to="/projects">Projects</NavLink></li>
-                <li><NavLink activeClassName="active" to="/bytes">Bytes</NavLink></li>
-                <li><NavLink activeClassName="active" to="/blog">Blog</NavLink></li>
+                {/* <li><NavLink activeClassName="active" to="/bytes">Bytes</NavLink></li> */}
+                {/* <li><NavLink activeClassName="active" to="/blog">Blog</NavLink></li> */}
                 <li><NavLink activeClassName="active" to="/contact">Contact</NavLink></li>
               </ul>
             </div>
