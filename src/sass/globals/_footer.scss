@@ -1,8 +1,6 @@
 footer.main {
-  padding-bottom: 1rem;
   .row:nth-child(1) {
     font-family: 'NeuzeitOffice-Bold', system;
-    padding: 1.5rem 0 1rem;
   }
   .phone {
     text-align: center;
@@ -18,9 +16,9 @@ footer.main {
       left: 0.5rem;
       img {
         width: auto;
-        height: 1.5rem;
+        height: 1.75rem;
         position: relative;
-        top: 0.4rem;
+        top: 1rem;
       }
     }
   }
@@ -30,7 +28,7 @@ footer.main {
     border-bottom: 2px solid $white-4;
   }
   .row:nth-of-type(3) {
-    padding-top: 1.5rem;
+    padding: 1.5rem 0;
     div:nth-child(2) {
       float: right;
       text-align: right;

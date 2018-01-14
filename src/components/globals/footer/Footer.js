@@ -9,15 +9,12 @@ export const Footer = () => (
   <footer className="main">
     <Grid fluid className="grid-container stage">
       <Row>
-        <Col xs={12} md={4} className="email">
-          <div>Email: hello@craftapplied.com</div>
+        <Col xs={12} sm={6} className="email">
+          <div>hello@craftapplied.com</div>
+          <div>+44 (0) 208 123 0264</div>
         </Col>
         
-        <Col xs={12} md={4} className="phone">
-          <div>Phone: +44 (0) 208 123 0264</div>
-        </Col>
-        
-        <Col xs={12} md={4} className="social">
+        <Col xs={12} sm={6} className="social">
           <a href="https://www.facebook.com/craftapplied/" target="_blank" rel="noopener">
             <img src={IconFooterFacebook} alt="Facebook icon"/>
           </a>
