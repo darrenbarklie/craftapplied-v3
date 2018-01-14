@@ -1,9 +1,6 @@
 footer.main {
-  .row:nth-child(1) {
+  .contact {
     font-family: 'NeuzeitOffice-Bold', system;
-  }
-  .phone {
-    text-align: center;
   }
   .social {
     text-align: right;
@@ -12,13 +9,11 @@ footer.main {
       width: 2.5rem;
       height: 2.5rem;
       text-align: center;
-      position: relative;
-      left: 0.5rem;
       img {
         width: auto;
         height: 1.75rem;
         position: relative;
-        top: 1rem;
+        top: 0.4rem;
       }
     }
   }
@@ -29,9 +24,37 @@ footer.main {
   }
   .row:nth-of-type(3) {
     padding: 1.5rem 0;
-    div:nth-child(2) {
+    .privacy {
       float: right;
       text-align: right;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .contact {
+      text-align: center;
+    }
+    .social {
+      margin-top: 0.5rem;
+      text-align: center;
+      a {
+        width: 3rem;
+        height: 3rem;
+        img {
+          position: relative;
+          top: 0.66rem;
+        }
+      }
+    }
+    .row:nth-of-type(3) {
+      .copyright {
+        text-align: center;
+      }
+      .privacy {
+        float: none;
+        margin-top: 0.5rem;
+        text-align: center;
+      }
     }
   }
 }

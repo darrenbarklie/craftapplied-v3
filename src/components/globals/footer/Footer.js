@@ -9,7 +9,7 @@ export const Footer = () => (
   <footer className="main">
     <Grid fluid className="grid-container stage">
       <Row>
-        <Col xs={12} sm={6} className="email">
+        <Col xs={12} sm={6} className="contact">
           <div>hello@craftapplied.com</div>
           <div>+44 (0) 208 123 0264</div>
         </Col>
@@ -36,11 +36,11 @@ export const Footer = () => (
       <div className="line-break"></div>
       
       <Row>
-        <Col xs={12} sm={9} md={8}>
+        <Col xs={12} sm={9} md={8} className="copyright">
           &copy; Copyright {(new Date()).getFullYear()} Craft Applied. All Rights Reserved.
         </Col>
         
-        <Col xs={12} sm={3} md={4}>
+        <Col xs={12} sm={3} md={4} className="privacy">
           <a href="#">Privacy Policy</a>
         </Col>
         
